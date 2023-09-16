@@ -6,7 +6,11 @@
   padding: 6rem;
   min-height: 100vh;
 }
-
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .editorContainer {
   width: 100%;
   height: 80vh; /* or whatever you prefer */
