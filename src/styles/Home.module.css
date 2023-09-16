@@ -12,7 +12,7 @@
   width: 100%;
 }
 .editorContainer {
-  width: 100%;
+  width: 50%;
   height: 80vh; /* or whatever you prefer */
   overflow: hidden;
 }
