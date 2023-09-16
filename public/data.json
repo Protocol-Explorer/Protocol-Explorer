@@ -1,0 +1,5 @@
+{
+    "question": "Define a function named addNumbers that takes two uint256 arguments and returns their sum.",
+    "answer": "function addNumbers(uint256 _a, uint256 _b) public pure returns (uint256) {return _a + _b;}"
+  }
+  
