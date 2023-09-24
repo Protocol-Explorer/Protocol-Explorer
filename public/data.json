@@ -1,5 +1,59 @@
-{
+[{
+    "index":1,
     "question": "Define a function named addNumbers that takes two uint256 arguments and returns their sum.",
     "answer": "function addNumbers(uint256 _a, uint256 _b) public pure returns (uint256) {return _a + _b;}"
+  },
+  {
+    "index":2,
+    "question": "Add a parameter to the constructor that sets the initial owner address. When deploying a contract with this type of construct, it would allow you to make the owner a different address then your own.",
+    "answer": "constructor(address payable _initialOwner) {owner = _initialOwner;}"
+  },
+  {
+    "index":3,
+    "question": "Declare a function named \"sayHello\" that does not take any arguments and returns a string \"Hello, World!\"",
+    "answer": "function sayHello() public pure returns (string memory) {return \"Hello, World!\";}"
   }
+  ,
+  {
+    "index":4,
+    "question": "Define a function named \"isEven\" that takes an integer as an argument and returns a boolean indicating whether the number is even or not.",
+    "answer": "function isEven(uint256 _number) public pure returns (bool) {return _number % 2 == 0;}"
+  }
+  ,
+  {
+    "index":5,
+    "question": "Declare a variable of type integer with the name \"age\" and assign it a value of 25 with a function.",
+    "answer": "function setAge() public {age = 25;}"
+  }
+  ,
+  {
+    "index":6,
+    "question": "Declare a variable of type string with the name \"name\" and assign it the value \"Alice\" with a function.",
+    "answer": "function addNumbers(uint256 _a, uint256 _b) public pure returns (uint256) {return _a + _b;}"
+  }
+  ,
+  {
+    "index":7,
+    "question": "Define a struct named \"Person\" with two fields: \"name\" of type string and \"age\" of type uint256. Write a function that uses the Struct Person for a variable with the values: \"Alice\" and \"25\".",
+    "answer": "struct Person {\nstring name;\nuint256 age;\n}\nPerson public person;\nfunction setPerson() public {\nperson = Person(\"Alice\", 25);\n}"
+  }
+  ,
+  {
+    "index":8,
+    "question": "Declare a dynamic array of type uint256 with the name \"numbers\" and initialise it with three numbers: 1, 2, and 3 using a function.",
+    "answer": "uint256[] public numbers;\nfunction\nsetNumbers() public {\nnumbers = [1, 2, 3];\n}"
+  }
+  ,
+  {
+    "index":9,
+    "question": "Define a function named \"sumArray\" that takes an array of uint256 as an argument and returns the sum of all the numbers in the array. This might be a spicy one.",
+    "answer": "function sumArray(uint256[] memory _array public pure returns (uint256) {\nuint256 sum = 0;\nfor (uint256 i = 0; i < _array.length; i++) {\nsum += _array[i];\n}\nreturn sum;\n}"
+  }
+  ,
+  {
+    "index":10,
+    "question": "Declare a mapping named \"balances\" that maps addresses to uint256 values. Write a function to set the balance of an address.",
+    "answer": "mapping(address => uint256) public balances;\nfunction setBalance(address _address, uint256 _balance) public {\nbalances[_address] = _balance;\n}"
+  }
+]
   
