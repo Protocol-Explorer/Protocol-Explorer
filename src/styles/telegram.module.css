@@ -1,0 +1,27 @@
+/* components/TelegramCallout.module.css */
+
+.telegramcallout {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    text-align: center;
+  }
+  
+  .telegrambutton {
+    background-color: white;
+    color: #000000;
+    
+    border-radius: 5px;
+
+    font-weight: bold;
+    margin-top: 1px;
+    
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .telegrambutton:hover {
+    background-color: #4a4c4e;
+    color: white;
+  }
+  

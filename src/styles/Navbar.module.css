@@ -1,0 +1,33 @@
+/* components/Navbar.module.css */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #000000;
+    height: 30px;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    font-size: 1rem;
+  }
+  
+  .navItem a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+  }
+  
+  .navItem a:hover {
+    color: #353131;
+  }
+  

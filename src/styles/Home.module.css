@@ -6,6 +6,18 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.mainHome {
+  padding: 0px;
+}
+.containerHome {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -16,7 +28,15 @@
   height: 80vh; /* or whatever you prefer */
   overflow: hidden;
 }
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
+.subtitle {
+  font-size: 1.5rem;
+  color: #333;
+}
 .description {
   display: inherit;
   justify-content: inherit;
