@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Editor from "@monaco-editor/react";
 import styles from "@/styles/Home.module.css";
-import { useState } from "react";
-import ExerciseCard from "@/components/ExerciseCard";
-export default function Home() {
-  const code = ``;
+import Navbar from "@/components/Navbar";
+import TelegramCall from "@/components/TelegramCall";
 
+export default function Home() {
   return (
     <>
       <Head>
@@ -14,24 +12,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main}`}>
-        <h1>Jutsu Engineering</h1>
-        <h3>Start practicing your solidity code</h3>
-        <div className={styles.container}>
-          <div className={styles.editorContainer}>
-            <Editor
-              width="100%"
-              height="100%"
-              language="sol"
-              theme="vs-dark"
-              value={code}
-            />
-          </div>
-          <div className={styles.editorContainer}>
-          <ExerciseCard />
-          </div>
-        </div>
-      </main>
+      <TelegramCall />
+      <Navbar />
+      <div className={styles.containerHome}>
+        <Head>
+          <title>Jutsu Engineer</title>
+          <meta
+            name="description"
+            content="Welcome to Jutsu Engineer - Your Coding Exercise Platform"
+          />
+        </Head>
+
+        <main className={styles.mainHome}>
+          <h1 className={styles.title}>Welcome to Jutsu Engineer</h1>
+          <h2 className={styles.subtitle}>Master the Art of Coding</h2>
+        </main>
+
+        <footer className={styles.footer}>
+          {/* Add footer content if needed */}
+        </footer>
+      </div>
     </>
   );
 }

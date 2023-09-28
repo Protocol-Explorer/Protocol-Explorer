@@ -11,40 +11,63 @@ const ExerciseCard: React.FC = () => {
 
   const [isExerciseStarted, setExerciseStarted] = useState(false);
   const [revealAnswer, setRevealAnswer] = useState(false);
-  const [data, setData] = useState<QuizData | null>(null);
   const [question, setQuestion] = useState<QuizData | null>(null);
+  const [allQuestions, setAllQuestions] = useState<QuizData[] | []>([])
+  const [currentIndex, setCurrentIndex] = useState<Number>(0);
 
   const fetchData = async () => {
     try {
       const response = await fetch("/data.json");
-      const jsonData: QuizData = await response.json();
-      setData(jsonData);
-      setRevealAnswer(true)
-    } catch (error) {
-      console.error("Error fetching the data", error);
-    }
-  };
-  const fetchQuestion = async () => {
-    try {
-      const response = await fetch("/data.json");
-      const jsonData: QuizData = await response.json();
-      setQuestion(jsonData);
+      const jsonData: QuizData[] = await response.json();
+      console.log("hello question")
+      console.log({jsonData})
+      setAllQuestions(jsonData);
+      setQuestion(jsonData[0])
       setExerciseStarted(true)
     } catch (error) {
       console.error("Error fetching the data", error);
     }
   };
 
-    const codeString = `
-    function addNumbers (uint256 _a, uint256 _b) public pure returns (uint256) {
-      return _a + _b; 
-    }
-    `;
+    function nextQuestion() {
+      setCurrentIndex(prevIndex => {
+          let newIndex = prevIndex;
+          //@ts-ignore
+          if (prevIndex < allQuestions.length - 1) {
+            //@ts-ignore
+              newIndex = prevIndex + 1;
+          }
+  
+          // Set the question using the new index.
+          //@ts-ignore
+          setQuestion(allQuestions[newIndex]);
+          setRevealAnswer(false)
+          return newIndex;
+      });
+  }
+
+  function previousQuestion() {
+    setCurrentIndex(prevIndex => {
+        let newIndex = prevIndex;
+        //@ts-ignore
+        if (prevIndex > 0) {
+          //@ts-ignore
+            newIndex = prevIndex - 1;
+        }
+
+        // Set the question using the new index.
+        //@ts-ignore
+        setQuestion(allQuestions[newIndex]);
+        setRevealAnswer(false)
+        return newIndex;
+    });
+}
+  
 
     if (!isExerciseStarted) {
         return (
             <div className={styles.cardContainer}>
-                <button className={styles.cardButton} onClick={fetchQuestion}>Start Exercise</button>
+                <button className={styles.cardButton} onClick={fetchData}>Start Exercise</button>
             </div>
         );
     }
@@ -60,14 +83,23 @@ const ExerciseCard: React.FC = () => {
                 height="100%"
                 language="sol"
                 theme="vs-dark"
-                value={codeString}
+                value={question?.answer}
                 options={{
                   wordWrap: "on"
                 }}
               />
             }
-            <button className={styles.cardButton} onClick={fetchData}>Reveal Answer</button>
-            <button className={styles.cardButton}>Next Question</button>
+            <button className={styles.cardButton} onClick={() => setRevealAnswer(true)}>Reveal Answer</button>
+              {/* @ts-ignore*/}
+            { currentIndex < allQuestions.length - 1 && (
+            <button className={styles.cardButton} 
+                    onClick={nextQuestion}>
+              Next Question
+            </button>
+            )}
+            { currentIndex !== 0 && (
+                          <button className={styles.cardButton} onClick={previousQuestion}>Previous Question</button>
+            )}
         </div>
     );
 }
