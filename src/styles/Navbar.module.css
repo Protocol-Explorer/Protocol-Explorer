@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    background-color: #000000;
+    background-color: #ffffff;
     height: 30px;
   }
   
@@ -23,11 +23,11 @@
   
   .navItem a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: color 0.2s;
   }
   
   .navItem a:hover {
-    color: #353131;
+    color: #989898;
   }
   

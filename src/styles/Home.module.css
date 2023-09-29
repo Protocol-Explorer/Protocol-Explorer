@@ -10,6 +10,7 @@
   padding: 0px;
 }
 .containerHome {
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,10 @@
   align-items: center;
   padding: 0 10px;
   text-align: center;
+  background-image:linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%), url('/jutsu.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 .container {
   display: flex;
@@ -29,13 +34,13 @@
   overflow: hidden;
 }
 .title {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: #333;
+  color: #ffffff;
 }
 .description {
   display: inherit;
