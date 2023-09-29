@@ -1,0 +1,59 @@
+/* pages/about.module.css */
+.intro {
+  width: 70%; 
+  margin: 7% auto 20px auto; 
+  margin-bottom: 5%;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+.page {
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust gap to control spacing between cards */
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Adds a transition effect */
+}
+
+
+.image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333; /* Darker text color */
+}
+
+.blurb {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666; /* Darker text color */
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.link {
+  display: inline-block; /* Adjusted to inline-block */
+  margin-right: 10px; /* Adds some spacing between links */
+  color: #0070f3;
+  text-decoration: none;
+}
