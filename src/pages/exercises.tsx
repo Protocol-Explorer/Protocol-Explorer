@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.css";
 import ExerciseCard from "@/components/ExerciseCard";
 import TelegramCall from "@/components/TelegramCall";
 import Navbar from "@/components/Navbar";
+import ChallengeCard from "@/components/ChallengeCard";
 
 export default function Exercises() {
   const code = ``;
@@ -22,7 +23,7 @@ export default function Exercises() {
         <h1>Jutsu Engineering</h1>
         <h3>Start practicing your solidity code</h3>
         <div className={styles.container}>
-          <div className={styles.editorContainer}>
+          {/* <div className={styles.editorContainer}>
             <Editor
               width="100%"
               height="100%"
@@ -30,9 +31,12 @@ export default function Exercises() {
               theme="vs-dark"
               value={code}
             />
+          </div> */}
+          <div className={styles.editorContainer}>
+            <ChallengeCard />
           </div>
           <div className={styles.editorContainer}>
-          <ExerciseCard />
+            <ExerciseCard />
           </div>
         </div>
       </main>

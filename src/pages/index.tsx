@@ -25,7 +25,6 @@ export default function Home() {
 
         <main className={styles.mainHome}>
           <h1 className={styles.title}>Welcome to Jutsu Engineer</h1>
-          <h2 className={styles.subtitle}>Master the Art of Coding</h2>
         </main>
 
         <footer className={styles.footer}>
