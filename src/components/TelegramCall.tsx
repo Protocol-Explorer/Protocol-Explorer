@@ -8,7 +8,7 @@ const TelegramCall = () => {
       <p>
         <Link
           className={styles.telegramJoin}
-          href="https://t.me/your_telegram_group_or_channel_link"
+          href="https://t.me/+vRIl8Wkm0B0zOTQx"
         >
           Join
         </Link>{" "}
