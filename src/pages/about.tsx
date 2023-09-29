@@ -20,8 +20,8 @@ const About = () => {
           <h2 className={styles.name}>Rahat</h2>
           <p className={styles.blurb}>Musician turned coder turned teacher turned something else. Just building and and helping others build along the way. Take me very seriously.</p>
           <div className={styles.links}>
-            <a href="https://www.rahatcodes.com/" className={styles.link}>Website</a>
-            <a href="https://twitter.com/Rahatcodes" className={styles.link}>Twitter</a>
+            <a href="https://www.rahatcodes.com/" target='_blank' className={styles.link}>Website</a>
+            <a href="https://twitter.com/Rahatcodes" target='_blank' className={styles.link}>Twitter</a>
           </div>
         </div>
         
@@ -32,8 +32,8 @@ const About = () => {
           <h2 className={styles.name}>Raza</h2>
           <p className={styles.blurb}>A coding nerd voyaging into tech. I try to learn and explain complicated shit. I spent most of my time building and breaking stuff. Don&apos;t take me too seriously.</p>
           <div className={styles.links}>
-            <a href="https://www.razacodes.com/" className={styles.link}>Website</a>
-            <a href="https://twitter.com/razacodes" className={styles.link}>Twitter</a>
+            <a href="https://www.razacodes.com/" target='_blank' className={styles.link}>Website</a>
+            <a href="https://twitter.com/razacodes" target='_blank' className={styles.link}>Twitter</a>
           </div>
         </div>
       </div>
