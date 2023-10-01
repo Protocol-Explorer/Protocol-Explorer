@@ -18,7 +18,12 @@
   align-items: center;
   padding: 0 10px;
   text-align: center;
-  background-image:linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%), url('/jutsu.jpg');
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url("/jutsu.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -27,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: fit-content;
 }
 .editorContainer {
   width: 50%;
@@ -132,7 +138,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -251,6 +257,22 @@
 
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .containerHome {
+    min-height: 80vh;
+  }
+  .editorContainer {
+    width: 90%;
+    height: 70vh; /* or whatever you prefer */
+    overflow: hidden;
   }
 }
 

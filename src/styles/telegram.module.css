@@ -1,21 +1,30 @@
 /* components/TelegramCallout.module.css */
 
 .telegramcallout {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    padding: 1px;
-    text-align: center;
-  }
-  .telegramJoin {
-    color: #ffffff;
-    font-weight: bold;
-  }
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 1px;
+  text-align: center;
+}
+.telegramTitle {
+  color: #ffffff;
+  font-weight: bold;
+}
+.telegramJoin {
+  color: #ffffff;
+  font-weight: bold;
+}
 
-  .telegramJoin:hover {
-    background-color: #000000;
-    border-radius: 5px;
-    color: rgb(188, 188, 188);
+.telegramJoin:hover {
+  background-color: #000000;
+  border-radius: 5px;
+  color: rgb(188, 188, 188);
+}
+
+@media screen and (max-width: 600px) {
+  .telegramTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
   }
-  
-  
-  
+}

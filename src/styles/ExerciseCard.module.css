@@ -34,3 +34,10 @@
 .cardButton:hover {
   background-color: #777;
 }
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    margin: 8px, 10px;
+    padding: 15px;
+  }
+}
