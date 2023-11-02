@@ -33,7 +33,7 @@ const Blog = () => {
     <TelegramCall />
       <Navbar />
       <h1 className={styles.headline}>Level up your skills</h1>
-      <p className={styles.blurb}>Check out the latest articts by Raza and Rahat</p>
+      <p className={styles.blurb}>Check out the latest articals by Raza and Rahat</p>
     <div className={styles.container}>
     <div className={styles.timeline}>
       {posts.map((post, index) => {
