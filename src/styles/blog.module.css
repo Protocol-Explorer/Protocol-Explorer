@@ -1,9 +1,9 @@
-.container {
+/* .container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
+} */
 
 .text {
   font-size: 2rem;
@@ -11,3 +11,108 @@
   font-weight: 500;
   letter-spacing: 2px;
 }
+
+/* components/BlogTimeline.module.css */
+.timeline {
+  max-width: 800px; /* Maximum width of the timeline to not spread too wide on large screens */
+  margin: 0 auto; /* Center the timeline */
+  padding: 40px 0; /* Padding at the top and bottom */
+}
+
+.entry {
+  background-color: #fff; /* White background for each entry */
+  border-radius: 8px; /* Rounded corners for the card-like feel */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for a lifted card effect */
+  margin-bottom: 30px; /* Space between entries */
+  padding: 20px; /* Padding inside each entry */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.entry:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow on hover for an interactive effect */
+}
+
+.entry:first-child {
+  margin-top: 0; /* First entry does not need top margin */
+}
+
+.entry:last-child {
+  margin-bottom: 0; /* Last entry does not need bottom margin */
+}
+
+.entry .content {
+  position: relative; /* Allows for absolute positioning of children */
+}
+
+.entry .content h3 {
+  margin-top: 0; /* No top margin for the title to align neatly with the top of the card */
+  color: #333;
+}
+
+.entry .content h3 a {
+  color: #3498db; /* The color for links */
+  text-decoration: none; /* No underline for a clean look */
+  transition: color 0.3s ease;
+}
+
+.entry .content h3 a:hover {
+  color: #1a6f9c; /* Darker blue on hover for interactivity */
+}
+
+.entry .content p {
+  color: #666; /* Lighter text color for readability against white background */
+  margin-bottom: 0; /* No bottom margin to keep tight spacing */
+}
+
+.title {
+  font-size: 24px; /* Adjust the size as needed */
+  margin-bottom: 0.5rem; /* Space between the title and excerpt */
+  line-height: 1.2; /* Adjust line height for better readability */
+}
+
+.headline {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 50px;
+}
+
+.blurb {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+
+
+/* components/BlogTimeline.module.css */
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem; /* Space between the author info and the excerpt */
+}
+
+.authorImage {
+  width: 50px; /* Size of the image */
+  height: 50px; /* Size of the image */
+  border-radius: 50%; /* Makes the image round */
+  margin-right: 10px; /* Space between image and author name */
+  object-fit: cover; /* Ensures the image covers the area, useful for non-square images */
+}
+
+.author {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.links {
+  color: black;
+}
+
+
+
+
+
+
+
