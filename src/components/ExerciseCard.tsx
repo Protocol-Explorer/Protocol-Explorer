@@ -78,7 +78,7 @@ const ExerciseCard: React.FC = () => {
       {revealAnswer && (
         <Editor
           width="100%"
-          height="80%"
+          height="67%"
           language="sol"
           theme="vs-dark"
           value={question?.answer}

@@ -5,7 +5,7 @@ import styles from "@/styles/telegram.module.css";
 const TelegramCall = () => {
   return (
     <div className={styles.telegramcallout}>
-      <p>
+      <p className={styles.telegramTitle}>
         <Link
           className={styles.telegramJoin}
           href="https://t.me/+vRIl8Wkm0B0zOTQx"
