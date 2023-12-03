@@ -22,7 +22,7 @@ export default function Exercises() {
       <main className={`${styles.main}`}>
         <h1>Jutsu Engineering</h1>
         <h3>Start practicing your solidity code</h3>
-        <div className={styles.container}>
+        <div className={styles.codeContainer}>
           {/* <div className={styles.editorContainer}>
             <Editor
               width="100%"

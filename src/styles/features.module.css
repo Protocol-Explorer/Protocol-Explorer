@@ -1,0 +1,42 @@
+/* styles/Features.module.css */
+
+.featuresContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #E5E4F9;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border-radius: 25px;
+}
+
+.featureItem {
+  background-color: #FFFFFF;
+  border: 1px solid #C9C2B7;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  width: 300px; /* Set a specific width for each card */
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-decoration: none;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px); /* Card pops up a bit on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.featureTitle {
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.featureDescription {
+  color: black;
+  font-size: 1rem;
+}

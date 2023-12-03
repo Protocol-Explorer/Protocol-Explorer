@@ -1,33 +1,82 @@
-/* components/Navbar.module.css */
+/* styles/Navbar.module.css */
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    background-color: #ffffff;
-    height: 30px;
-  }
-  
-  .navList {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navItem {
-    font-size: 1rem;
-  }
-  
-  .navItem a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    transition: color 0.2s;
-  }
-  
-  .navItem a:hover {
-    color: #989898;
-  }
-  
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menuIcon {
+  /* Styles for the menu icon */
+}
+
+.burgerLines {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  /* Add more styles if needed */
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  /* Increase spacing between links if needed */
+  gap: 20px; 
+}
+
+.navLink {
+  margin: 0;
+  padding: 10px; /* Add padding to increase tap/click area */
+  text-decoration: none;
+  color: black; /* Choose a color that contrasts well with the navbar background */
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: 500; /* Increase font weight to make it bolder */
+  /* You may also add text-transform for uppercase, if it fits your design */
+  text-transform: uppercase;
+  /* Add a transition for a hover effect */
+  transition: color 0.3s ease;
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: #C9C2B7;
+}
+
+.navActions {
+  margin-left: auto; /* This will push the actions to the right */
+}
+
+.signInButton,
+.joinButton {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  /* Add more styles for buttons */
+}
+
+.joinButton {
+  font-family: 'Questrial', sans-serif;
+  background-color: #E5E4F9;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: .5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.joinButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
