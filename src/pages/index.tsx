@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Navbar";
 import TelegramCall from "@/components/TelegramCall";
+import Image from "next/image";
+import Features from "@/components/Features";
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TelegramCall />
+      <TelegramCall /> 
       <Navbar />
       <div className={styles.containerHome}>
         <Head>
@@ -23,13 +25,24 @@ export default function Home() {
           />
         </Head>
 
-        <main className={styles.mainHome}>
-          <h1 className={styles.title}>Welcome to Jutsu Engineer</h1>
-        </main>
-
-        <footer className={styles.footer}>
-          {/* Add footer content if needed */}
-        </footer>
+        <div className={styles.container}>
+      <header className={styles.header}>
+        <h1 className={styles.heading}>Code, Play, and Explore the World of Web3</h1>
+        <p className={styles.introText}>Welcome to Jutsu Engineer, your platform for hands-on coding practice and web3 exploration. Engage with practical coding games and learn about the latest in web3, all in a supportive community of fellow engineers.</p>
+          <button className={styles.joinButton}>Join Waitlist</button>
+      </header>
+      <main className={styles.mainContent}>
+        <div className={styles.imageWrapper}>
+          <Image 
+            src="/jutsu.jpg"
+            alt="Jutsu engineering platform"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+      </main>
+    </div>
+    <Features />
       </div>
     </>
   );
