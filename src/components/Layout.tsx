@@ -6,6 +6,13 @@ import Tabs from "./Tabs";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons'
 
+type article = {
+  title: string;
+  author: string;
+  twitter: string;
+  link: string;
+};
+
 interface Protocol {
   name: string;
   website: string;
@@ -17,6 +24,7 @@ interface Protocol {
   slug: string;
   description: string;
   labels: string[];
+  articles: article[];
 }
 
 interface ProtocolPageProps {

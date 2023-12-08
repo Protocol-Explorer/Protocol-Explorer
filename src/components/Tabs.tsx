@@ -2,15 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "@/styles/Tabs.module.css";
 import Articles from "./Articles";
 
-articles: [
-  {
-    title: "👛 Multisig transactions with Gnosis Safe",
-    author: "Federico Ulfo",
-    twitter: "https://twitter.com/feulf",
-    link: "https://medium.com/gauntlet-networks/multisig-transactions-with-gnosis-safe-f5dbe67c1c2d",
-  },
-];
-
 type article = {
   title: string;
   author: string;
