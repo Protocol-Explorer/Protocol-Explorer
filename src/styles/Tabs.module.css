@@ -1,0 +1,32 @@
+/* Tabs.module.css */
+
+.tabs {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 1rem;
+  position: relative; 
+}
+
+.tabs li {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  position: relative;
+  font-size: 2rem;
+}
+
+.underline {
+  position: absolute;
+  height: 2px;
+  background-color: #A2A2A5;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: left 0.3s ease, width 0.3s ease; 
+  z-index: -1; 
+}
+
+.tabs li.current {
+  color: #A2A2A5;
+}

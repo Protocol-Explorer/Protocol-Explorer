@@ -12,7 +12,7 @@ export default function Exercises() {
   return (
     <>
       <Head>
-        <title>Jutsu Engineering</title>
+        <title>Protocol Explorering</title>
         <meta name="description" content="Start practicing Solidity now" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -20,7 +20,7 @@ export default function Exercises() {
       <TelegramCall />
       <Navbar />
       <main className={`${styles.main}`}>
-        <h1>Jutsu Engineering</h1>
+        <h1>Protocol Explorering</h1>
         <h3>Start practicing your solidity code</h3>
         <div className={styles.codeContainer}>
           {/* <div className={styles.editorContainer}>

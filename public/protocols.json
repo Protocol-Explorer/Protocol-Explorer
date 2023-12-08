@@ -1,0 +1,58 @@
+[
+  {
+    "name": "The Graph",
+    "website": "https://thegraph.com/",
+    "heroImage": "/heros/graph.jpeg",
+    "logo": "/icons/graph.png",
+    "twitterLink": "https://twitter.com/graphprotocol",
+    "discordLink": "https://www.reddit.com/r/thegraph/",
+    "docs": "https://thegraph.com/docs/en/",
+    "slug": "thegraph",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat a tempore error sint neque inventore veritatis ullam quis, fugit eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat a tempore error sint neque inventore veritatis ullam quis, fugit eos.",
+    "labels": [
+      "infrastructure"
+    ]
+  },
+  {
+    "name": "Sushi",
+    "website": "https://www.sushi.com/",
+    "heroImage": "/heros/graph.jpeg",
+    "logo": "/icons/Sushi.png",
+    "twitterLink": "https://twitter.com/sushiswap",
+    "discordLink": "https://discord.gg/NVPXN4e",
+    "docs": "https://docs.sushi.com/",
+    "slug": "sushi",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat a tempore error sint neque inventore veritatis ullam quis, fugit eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat a tempore error sint neque inventore veritatis ullam quis, fugit eos.",
+    "labels": [
+      "defi"
+    ]
+  },
+  {
+    "name": "Safe",
+    "website": "https://safe.global/",
+    "heroImage": "/heros/graph.jpeg",
+    "logo": "/icons/safe1.png",
+    "twitterLink": "https://x.com/safe",
+    "discordLink": "https://chat.safe.global/",
+    "docs": "https://docs.safe.global/getting-started/readme",
+    "slug": "safe",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat a tempore error sint neque inventore veritatis ullam quis, fugit eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat a tempore error sint neque inventore veritatis ullam quis, fugit eos.",
+    "labels": [
+      "infrastructure", "wallet"
+    ]
+  },
+  {
+    "name": "The Graph",
+    "website": "https://thegraph.com/",
+    "heroImage": "/heros/graph.jpeg",
+    "logo": "/icons/graph.png",
+    "twitterLink": "https://twitter.com/graphprotocol",
+    "discordLink": "https://www.reddit.com/r/thegraph/",
+    "docs": "https://thegraph.com/docs/en/",
+    "slug": "thegraph",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat a tempore error sint neque inventore veritatis ullam quis, fugit eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat a tempore error sint neque inventore veritatis ullam quis, fugit eos.",
+    "labels": [
+      "infrastructure"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
-# Jutsu Engineer
+# Protocol Explorer
 
-Jutsu Engineer is a platform aimed at helping individuals learn the fundamentals of different programming languages. Practice your syntax and practice simply writing the code until it becomes second nature. This repository is a Next JS Application 
+Protocol Explorer is a platform aimed at helping individuals learn the fundamentals of different programming languages. Practice your syntax and practice simply writing the code until it becomes second nature. This repository is a Next JS Application 
 
 ## Getting Started
 

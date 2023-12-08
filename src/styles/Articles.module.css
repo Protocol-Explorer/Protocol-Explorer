@@ -1,0 +1,52 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  margin-top: 5%;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 20px;
+  width: 80%; /* Adjust width as needed */
+  text-align: center;
+  border: 1px solid #c0c0c0; /* Light grey border */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), /* Shadow for depth */
+              -1px -1px 5px rgba(255, 255, 255, 0.7); /* Lighter shadow for 3D effect */
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+}
+
+
+.link {
+  font-family: 'Questrial', sans-serif;
+  background-color: #E5E4F9;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: .5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 15px;
+}
+
+.link:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.byline {
+  margin-bottom: 25px;
+}

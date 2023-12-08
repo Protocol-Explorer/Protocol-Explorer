@@ -37,7 +37,6 @@ const Blog = () => {
     <div className={styles.container}>
     <div className={styles.timeline}>
       {posts.map((post, index) => {
-        console.log({ slug: post.link })
         return (
           (
             <div key={post.link} className={styles.entry}>

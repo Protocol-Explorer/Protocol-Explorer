@@ -18,8 +18,6 @@ const ExerciseCard: React.FC = () => {
     try {
       const response = await fetch("/data.json");
       const jsonData: QuizData[] = await response.json();
-      console.log("hello question");
-      console.log({ jsonData });
       setAllQuestions(jsonData);
       setQuestion(jsonData[0]);
       setExerciseStarted(true);

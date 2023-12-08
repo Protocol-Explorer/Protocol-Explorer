@@ -1,4 +1,4 @@
-# Contributing to Jutsu Engineer
+# Contributing to Protocol Explorer
 
 Thank you for your interest in contributing to our project! Your input is valuable and we appreciate your time and effort. Below are the instructions for making contributions.
 

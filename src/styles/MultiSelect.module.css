@@ -1,0 +1,36 @@
+.header {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.protocolWrapper{
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.label {
+  width: max-content;
+  background-color: #E5E4F9;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none; /* Removes the default border */
+  outline: none; /* Removes the default outline */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  color: inherit; /* Inherits the font color from the parent */
+  font: inherit; /* Inherits the font style from the parent */
+  line-height: normal; /* Resets the default line height */
+  -webkit-appearance: none; /* Removes default styling for WebKit browsers */
+  -moz-appearance: none; /* Removes default styling for Mozilla browsers */
+  appearance: none; /* Removes default styling for modern browsers */
+  padding: 10px;
+
+}
+
+.selected {
+  background-color: #C9C2B7; /* A different color to indicate selection */
+}
