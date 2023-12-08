@@ -18,8 +18,8 @@ const Navbar = () => {
       />
       </Link>
       <div className={styles.navLinks}>
-        <Link href="/" className={styles.navLink}>Home</Link>
         <Link href="/exercises" className={styles.navLink} >Train!</Link>
+        <Link href="/explore" className={styles.navLink} >Explore</Link>
         <Link href="/blog" className={styles.navLink}>Blog</Link>
         <Link href="/about" className={styles.navLink}>About</Link>
       </div>

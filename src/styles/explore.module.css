@@ -1,0 +1,14 @@
+.main {
+  min-height: 100vh;
+  max-width: 1200px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto;
+} 
+
+.header {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

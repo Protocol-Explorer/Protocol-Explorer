@@ -1,0 +1,119 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.iconWrapper {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  background-color: #FFF;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: .5px solid black;
+}
+
+.heroImageWrapper {
+  position: relative;
+  width: 90%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.titleWapper {
+  display: flex;
+}
+
+.title {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.label {
+  width: max-content;
+  background-color: #E5E4F9;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.pageContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sideMenu {
+  background-color: #F8F8F8;
+  border-radius: 50px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin-right: 10%;
+}
+
+.link {
+  font-family: 'Questrial', sans-serif;
+  background-color: #E5E4F9;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: .5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.link:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+}
+
+.socialIcon {
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+
+.socialIconWrapper {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  background-color: #E5E4F9;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  margin-top: 20px;
+}

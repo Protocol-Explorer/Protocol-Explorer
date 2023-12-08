@@ -1,0 +1,99 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  overflow: hidden; 
+  padding: 15px;
+  background-color: #F8F8F8;
+  max-height: 400px;
+}
+
+.iconWrapper {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  background-color: #FFF;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: .5px solid black;
+}
+
+.cardTitle {
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.link {
+  font-family: 'Questrial', sans-serif;
+  background-color: #E5E4F9;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: .5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: max-content;
+  height: max-content;
+  margin-top: 5px;
+}
+
+.link:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.label {
+  width: max-content;
+  background-color: #E5E4F9;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.labelWrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.socialIcon {
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+
+.socialIconWrapper {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  background-color: #E5E4F9;
+}
