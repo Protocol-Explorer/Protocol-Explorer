@@ -12,16 +12,12 @@ import TelegramCall from '@/components/TelegramCall';
 import Layout from '@/components/Layout';
 import { useMDXComponents } from "../../mdx-components"
 
-// Dynamically import MDX components
-// const Navbar = dynamic(() => import('@/components/Navbar'));
-
-// If you have other components to include, import them similarly
 
 const components = { Navbar }; // Add other components to this object
-
+//@ts-ignore
 const ProtocolPage = ({ mdxSource, frontMatter }) => {
   const MDXComponents = useMDXComponents(components)
-  console.log({ frontMatter })
+
   return (
     <>
       <TelegramCall />

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Jutsu Engineering</title>
+        <title>Protocol Explorering</title>
         <meta name="description" content="Start practicing Solidity now" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -18,24 +18,24 @@ export default function Home() {
       <Navbar />
       <div className={styles.containerHome}>
         <Head>
-          <title>Jutsu Engineer</title>
+          <title>Protocol Explorer</title>
           <meta
             name="description"
-            content="Welcome to Jutsu Engineer - Your Coding Exercise Platform"
+            content="Welcome to Protocol Explorer - Your Gateway to Web3"
           />
         </Head>
 
         <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.heading}>Code, Play, and Explore the World of Web3</h1>
-        <p className={styles.introText}>Welcome to Jutsu Engineer, your platform for hands-on coding practice and web3 exploration. Engage with practical coding games and learn about the latest in web3, all in a supportive community of fellow engineers.</p>
-          <button className={styles.joinButton}>Join Waitlist</button>
+        <p className={styles.introText}>Welcome to Protocol Explorer, your platform for hands-on coding practice and web3 exploration. Engage with practical coding games and learn about the latest in web3, all in a supportive community of fellow engineers.</p>
+          <a href="https://t.me/+vRIl8Wkm0B0zOTQx" target="_blank" className={styles.joinButton}>Join Our Telegram</a>
       </header>
       <main className={styles.mainContent}>
         <div className={styles.imageWrapper}>
           <Image 
             src="/jutsu.jpg"
-            alt="Jutsu engineering platform"
+            alt="Protocol Explorering platform"
             layout="fill"
             objectFit="contain"
           />

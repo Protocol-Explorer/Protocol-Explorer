@@ -23,7 +23,7 @@
 
 .introText {
   font-size: 1.25rem; /* Increase the font size */
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   max-width: 900px; /* Set a max-width to encourage wrapping */
   text-align: left;
   line-height: 1.2; /* Adjust line-height for better readability */

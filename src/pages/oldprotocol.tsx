@@ -62,7 +62,7 @@ const ProtocolPage: React.FC<ProtocolPageProps> = ({ protocol }) => {
   return (
     <>
       <Head>
-        <title>Jutsu Engineering</title>
+        <title>Protocol Explorering</title>
         <meta name="description" content="Start practicing Solidity now" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -74,7 +74,7 @@ const ProtocolPage: React.FC<ProtocolPageProps> = ({ protocol }) => {
           <div className={styles.iconWrapper}>
             <Image
               src={logo}
-              alt="Jutsu engineering platform"
+              alt="Protocol Explorering platform"
               layout="fill"
               objectFit="contain"
             />

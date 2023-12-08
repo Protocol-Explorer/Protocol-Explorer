@@ -27,12 +27,11 @@ interface ProtocolPageProps {
 
 
 const Layout: React.FC<ProtocolPageProps> = ({ protocol, children }) => {
-  console.log({ children })
   const { name, logo, heroImage, labels, website, docs, discordLink, twitterLink } = protocol;
   return (
     <>
       <Head>
-        <title>Jutsu Engineering</title>
+        <title>Protocol Explorering</title>
         <meta name="description" content="Start practicing Solidity now" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -42,7 +41,7 @@ const Layout: React.FC<ProtocolPageProps> = ({ protocol, children }) => {
           <div className={styles.iconWrapper}>
             <Image
               src={logo}
-              alt="Jutsu engineering platform"
+              alt="Protocol Explorering platform"
               layout="fill"
               objectFit="contain"
             />
@@ -60,19 +59,19 @@ const Layout: React.FC<ProtocolPageProps> = ({ protocol, children }) => {
           />
         </div>
         <div className={styles.pageContent}>
-        <Tabs>
+        <Tabs protocol={protocol}>
           {children}
         </Tabs>
         <div className={styles.sideMenu}>
         <div className={styles.iconWrapper}>
             <Image
               src={logo}
-              alt="Jutsu engineering platform"
+              alt="Protocol Explorering platform"
               layout="fill"
               objectFit="contain"
             />
           </div>
-          <h3>Start building with the Graph Today</h3>
+          <h3>Start building with {name} Today</h3>
           <div className={styles.links}>
           <a href={website} target='_blank' className={styles.link}>Website</a>
           <a href={docs} target='_blank' className={styles.link}>Docs</a>

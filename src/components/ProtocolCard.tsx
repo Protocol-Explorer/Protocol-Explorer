@@ -19,13 +19,12 @@ type ProtocolCardProps = {
 };
 
 const ProtocolCard: React.FC<ProtocolCardProps> = ({ name, logo, description, labels, twitterLink, discordLink, slug }) => {
-  console.log({ name })
   return (
     <div className={styles.card}>
       <div className={styles.iconWrapper}>
         <Image
           src={logo}
-          alt="Jutsu engineering platform"
+          alt="Protocol Explorering platform"
           layout="fill"
           objectFit="contain"
         />

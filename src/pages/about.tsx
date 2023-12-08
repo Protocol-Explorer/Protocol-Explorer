@@ -10,7 +10,7 @@ const About = () => {
       <TelegramCall />
       <Navbar />
       <p className={styles.intro}>
-        Learning to code is broken...we are here to fix it with Jutsu Engineer. We have a bias towards making sure you master the fundamentels while getting your hands on a keyboard as quickly as possible. 
+        Learning to code is broken...we are here to fix it with Protocol Explorer. We have a bias towards making sure you master the fundamentels while getting your hands on a keyboard as quickly as possible. 
       </p>
       <div className={styles.cardContainer}>
         {/* Card 1 */}

@@ -6,8 +6,8 @@ import Navbar from "@/components/Navbar";
 import TelegramCall from "@/components/TelegramCall";
 import styles from "@/styles/explore.module.css"
 import ProtocolCard from "@/components/ProtocolCard";
-import SelectMenu from "@/components/SelectMenu";
 import { useState } from 'react';
+import MultiSelect from '@/components/MultiSelect';
 
 interface Protocol {
   name: string;
@@ -31,15 +31,15 @@ export default function Explore({ protocols }:ProtocolPageProps) {
   return (
     <>
       <Head>
-        <title>Jutsu Engineering</title>
+        <title>Protocol Explorering</title>
         <meta name="description" content="Start practicing Solidity now" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TelegramCall />
       <Navbar />
-      <SelectMenu protocols={protocols} protocolData={protocolData} setProtocolData={setProtocolData} />
       <h1 className={styles.header}>Explore the World of Web3</h1>
+      <MultiSelect protocols={protocols} setProtocolData={setProtocolData} />
       <main className={styles.main}>
         {protocolData.map((protocol, i) => <ProtocolCard key={i} {...protocol} />)}
       </main>
