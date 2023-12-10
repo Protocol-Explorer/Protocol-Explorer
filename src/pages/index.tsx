@@ -9,22 +9,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Protocol Explorering</title>
-        <meta name="description" content="Start practicing Solidity now" />
+        <title>Protocol Explorer</title>
+        <meta name="description" content="Welcome to Protocol Explorer - Your Gateway to Web3" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TelegramCall /> 
       <Navbar />
       <div className={styles.containerHome}>
-        <Head>
-          <title>Protocol Explorer</title>
-          <meta
-            name="description"
-            content="Welcome to Protocol Explorer - Your Gateway to Web3"
-          />
-        </Head>
-
         <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.heading}>Code, Play, and Explore the World of Web3</h1>

@@ -12,7 +12,7 @@ export default function Exercises() {
   return (
     <>
       <Head>
-        <title>Protocol Explorering</title>
+        <title>Protocol Explorer</title>
         <meta name="description" content="Start practicing Solidity now" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

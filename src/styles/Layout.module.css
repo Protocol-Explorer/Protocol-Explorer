@@ -2,6 +2,7 @@
   width: 80%;
   margin: 0 auto;
   min-height: 100vh;
+  margin-bottom: 120px;
 }
 
 .iconWrapper {
@@ -32,8 +33,8 @@
 }
 
 .title {
-  margin-top: 20px;
-  margin-left: 10px;
+ margin-top: 20px;
+ margin-left: 10px;
 }
 
 .label {
@@ -117,4 +118,9 @@
   justify-content: space-between;
   width: 110px;
   margin-top: 20px;
+}
+
+.backArrow {
+  width: 50px;
+  color: black;
 }
