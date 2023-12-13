@@ -50,3 +50,14 @@
 .byline {
   margin-bottom: 25px;
 }
+
+@media screen and (max-width: 425px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    margin-bottom: 20px;
+  }
+}

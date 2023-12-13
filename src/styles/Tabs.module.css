@@ -30,3 +30,16 @@
 .tabs li.current {
   color: #A2A2A5;
 }
+
+@media screen and (max-width: 425px) {
+  .tabs li {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 375) {
+  .tabs {
+    margin-left: -30px;
+  }
+}

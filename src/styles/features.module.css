@@ -40,3 +40,18 @@
   color: black;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 425px) {
+  .featureDescription {
+    display: none;
+  }
+
+  .featureTitle {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .featuresContainer {
+    margin-top: 0;
+  }
+}
