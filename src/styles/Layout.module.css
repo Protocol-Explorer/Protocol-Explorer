@@ -124,3 +124,18 @@
   width: 50px;
   color: black;
 }
+
+@media screen and (max-width: 425px) {
+  .heroImageWrapper {
+    width: 100%;
+    height: 100px;
+  }
+  .pageContent {
+    flex-direction: column-reverse;
+  }
+  .backArrow {
+    width: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
