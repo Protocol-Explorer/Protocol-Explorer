@@ -1,29 +1,28 @@
 // pages/[protocol].tsx
 
-import { GetStaticPaths, GetStaticProps } from 'next';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import dynamic from 'next/dynamic';
-import { serialize } from 'next-mdx-remote/serialize';
-import { MDXRemote } from 'next-mdx-remote';
-import Navbar from '@/components/Navbar';
-import TelegramCall from '@/components/TelegramCall';
-import Layout from '@/components/Layout';
-import { useMDXComponents } from "../../mdx-components"
-
+import { GetStaticPaths, GetStaticProps } from "next";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import dynamic from "next/dynamic";
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote";
+import Navbar from "@/components/Navbar";
+import TelegramCall from "@/components/TelegramCall";
+import Layout from "@/components/Layout";
+import { useMDXComponents } from "../../mdx-components";
 
 const components = { Navbar }; // Add other components to this object
 //@ts-ignore
 const ProtocolPage = ({ mdxSource, frontMatter }) => {
-  const MDXComponents = useMDXComponents(components)
+  const MDXComponents = useMDXComponents(components);
 
   return (
     <>
       <TelegramCall />
-      <Navbar /> {/* Use the Navbar or any other components as needed */}
-      <Layout protocol={...frontMatter}>
-      <MDXRemote {...mdxSource} components={MDXComponents} />
+      <Navbar />
+      <Layout protocol={frontMatter}>
+        <MDXRemote {...mdxSource} components={MDXComponents} />
       </Layout>
     </>
   );
@@ -32,11 +31,11 @@ const ProtocolPage = ({ mdxSource, frontMatter }) => {
 export default ProtocolPage;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const files = fs.readdirSync(path.join('src', 'protocols'));
+  const files = fs.readdirSync(path.join("src", "protocols"));
 
   const paths = files.map((fileName) => ({
     params: {
-      protocol: fileName.replace(/\.mdx$/, ''),
+      protocol: fileName.replace(/\.mdx$/, ""),
     },
   }));
 
@@ -46,12 +45,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const protocol = params?.protocol;
 
-  if (typeof protocol !== 'string') {
+  if (typeof protocol !== "string") {
     return { notFound: true };
   }
 
-  const filePath = path.join('src', 'protocols', `${protocol}.mdx`);
-  const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
+  const filePath = path.join("src", "protocols", `${protocol}.mdx`);
+  const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
   const { data: frontMatter, content } = matter(markdownWithMeta);
 
   const mdxSource = await serialize(content, {

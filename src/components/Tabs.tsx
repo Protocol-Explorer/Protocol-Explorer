@@ -34,8 +34,8 @@ const Tabs: React.FC<ProtocolPageProps> = ({ children, protocol }) => {
   const tabsData = [
     { label: "Overview", content: children },
     { label: "Articles", content: <Articles articles={protocol.articles} /> },
-    { label: "Videos", content: "Viewing Soon" },
-    { label: "Code", content: "Coming Code" },
+    // { label: "Videos", content: "Viewing Soon" }, - bring this back someday
+    // { label: "Code", content: "Coming Code" }, - bring this back someday
   ];
 
   useEffect(() => {
