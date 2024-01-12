@@ -11,6 +11,9 @@
 }
 
 .iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 75px;
   height: 75px;
@@ -18,6 +21,7 @@
   border-radius: 50%;
   margin-bottom: 20px;
   border: .5px solid black;
+  overflow: hidden; /* This ensures no overflow if the image is larger than the container */
 }
 
 .cardTitle {
