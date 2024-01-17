@@ -56,7 +56,8 @@ const MultiSelect: React.FC<ProtocolPageProps> = ({
 
   useEffect(() => {
     const allLabels = protocols.flatMap((protocol) => protocol.labels)
-    const uniqueCategories = Array.from(new Set(allLabels));
+    const lowerCaseArray = allLabels.map(item => item.trim().toLowerCase());
+    const uniqueCategories = Array.from(new Set(lowerCaseArray));
     setCategories(uniqueCategories)
   }, [protocols]);
 
