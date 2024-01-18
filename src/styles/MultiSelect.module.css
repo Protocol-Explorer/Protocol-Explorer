@@ -4,8 +4,11 @@
   margin-bottom: 20px;
 }
 
-.protocolWrapper{
-  width: max-content;
+.protocolWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* This will center the buttons in the container */
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
