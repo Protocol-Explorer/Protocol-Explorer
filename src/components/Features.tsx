@@ -7,7 +7,7 @@ const Features = () => {
     <div className={styles.featuresContainer}>
       <Link className={styles.featureItem} href="/explore">
         <h3 className={styles.featureTitle}>Explore</h3>
-        <p className={styles.featureDescription}>Dive into the technologies and protcols available in web3</p>
+        <p className={styles.featureDescription}>Dive into the technologies and protocols available in web3</p>
     </Link>
     <Link className={styles.featureItem} href="/exercises">
         <h3 className={styles.featureTitle}>Train!</h3>

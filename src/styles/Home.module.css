@@ -41,41 +41,58 @@
 
 
 .joinButton {
-  font-family: 'Questrial', sans-serif;
-  background-color: #E5E4F9;
-  font-size: 16px;
-  letter-spacing: 2px;
+  position: absolute;
+  bottom: 15%; /* Adjust this value to position the link vertically */
+  left: 27%; /* Position link horizontally in the center */
+  transform: translateX(-50%);
+  margin-left: -1%;
+  /* Adjust button background color as needed */
+  color: #fff; /* Adjust button text color as needed */
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: .5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  font-size: 23px;
+  color: 
+  #8575A9;
 }
-
-.joinButton:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
+.wrappedItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-
-
+.imageWrapper,
+.exploreProtocol {
+  flex: 1; /* Equal width distribution */
+}
 .mainContent {
   position: relative; 
   width: 100%; 
   height: 600px; 
 }
 
-.imageWrapper {
+.imageWrapper1 {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  margin-left: 10%;
+}
+
+.img {
+  width: 260px;
+height: 58px;
+  margin-right: 20px; /* Adjust as needed */
+  
+}
+.img1 {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
 }
 
 .main {
@@ -324,6 +341,7 @@
   }
   .containerHome {
     min-height: 80vh;
+    display: flex;
   }
   .editorContainer {
     width: 90%;
@@ -332,6 +350,32 @@
   }
 }
 
+.textWrapper{
+  color :#8575a9;
+  font-family: "Roboto-Light";
+  font-size: auto;
+  font-weight: auto;
+  white-space: nowrap;
+}
+
+.worldOf{
+  height: 100px;
+  left:97px;
+  position: absolute;
+  top: 220px;
+  width:234px;
+  color :#8575a9;
+  font-size: 17px;
+}
+.arrow{
+  height: 20px;
+}
+.arrowDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5%;
+}
 
 @keyframes rotate {
   from {
