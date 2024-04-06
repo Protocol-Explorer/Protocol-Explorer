@@ -1,13 +1,13 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import TelegramCall from "@/components/TelegramCall";
-import styles from "@/styles/explore.module.css"
+import styles from "@/styles/explore.module.css";
 import ProtocolCard from "@/components/ProtocolCard";
-import { useState } from 'react';
-import MultiSelect from '@/components/MultiSelect';
+import { useState } from "react";
+import MultiSelect from "@/components/MultiSelect";
 
 interface Protocol {
   name: string;
@@ -26,8 +26,8 @@ interface ProtocolPageProps {
   protocols: Protocol[];
 }
 
-export default function Explore({ protocols }:ProtocolPageProps) {
-  const [protocolData, setProtocolData] = useState(protocols)
+export default function Explore({ protocols }: ProtocolPageProps) {
+  const [protocolData, setProtocolData] = useState(protocols);
   return (
     <>
       <Head>
@@ -41,32 +41,34 @@ export default function Explore({ protocols }:ProtocolPageProps) {
       <h1 className={styles.header}>Explore the World of Web3</h1>
       <MultiSelect protocols={protocols} setProtocolData={setProtocolData} />
       <main className={styles.main}>
-        {protocolData.map((protocol, i) => <ProtocolCard key={i} {...protocol} />)}
+        {protocolData.map((protocol, i) => (
+          <ProtocolCard key={i} {...protocol} />
+        ))}
       </main>
     </>
   );
 }
 
 export const getStaticProps = async () => {
-  const files = fs.readdirSync(path.join('src', 'protocols'));
+  const files = fs.readdirSync(path.join("src", "protocols"));
 
   const protocols = files.map((filename) => {
-      const markdownWithMeta = fs.readFileSync(
-          path.join('src', 'protocols', filename),
-          'utf-8'
-      );
+    const markdownWithMeta = fs.readFileSync(
+      path.join("src", "protocols", filename),
+      "utf-8"
+    );
 
-      const { data: frontMatter } = matter(markdownWithMeta);
+    const { data: frontMatter } = matter(markdownWithMeta);
 
-      return {
-          slug: filename.replace('.mdx', ''),
-          ...frontMatter,
-      };
+    return {
+      slug: filename.replace(".mdx", ""),
+      ...frontMatter,
+    };
   });
 
   return {
-      props: {
-          protocols,
-      },
+    props: {
+      protocols,
+    },
   };
 };
