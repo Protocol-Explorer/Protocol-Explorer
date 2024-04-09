@@ -89,15 +89,9 @@
   display: inline-block; /* Ensures the SVG and text are inline */
   position: relative;
 }
-
-/* .joinTelegramSVG,
-.additionalSVG,
-.text {
-  position: absolute; /* Position the elements absolutely */
-
 .text{
   position: absolute;
-  top: 40%; /* Aligns the text to the top of the container */
+  top: 45%; /* Aligns the text to the top of the container */
   left: 140px; /* Adjust the left position */
   transform: translate(-50%, -50%); /* Center the text */
   white-space: nowrap; /* Prevent text from wrapping */
