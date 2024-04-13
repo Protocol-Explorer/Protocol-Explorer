@@ -7,29 +7,8 @@
   margin: 0 auto;
 } 
 
-.centeredContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Adjust the height as needed */
-}
 .header {
-  text-align: center;
   width: max-content;
   margin: 0 auto;
   margin-bottom: 20px;
-}
-
-
-.circleSvg{
-  gap: 20px; 
-  border-radius: 100%; /* Makes the image circular */
-  width: 60px; /* Set the size of the circle */
-  height: 60px;
-  border: 3px solid 
-  #E4E4F9; /* Example: A solid border with a light color */
-  margin-top: 1%;
-  margin-left: 50%;
-  margin-right: 50%;
-  
 }
