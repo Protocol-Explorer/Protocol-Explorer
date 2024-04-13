@@ -1,13 +1,13 @@
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  justify-content: space-between;
+  border-radius: 20px 20px 20px 0px;   
   overflow: hidden; 
   padding: 15px;
-  background-color: #F8F8F8;
-  max-height: 350px;
+  background: #F9F9FE;
+  width: 20.25rem;
+  height: 24.875rem;
 }
 
 .iconWrapper {
@@ -15,13 +15,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 60px; /* Set the size of the circle */
+  height: 60px;
   background-color: #FFF;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: .5px solid black;
-  overflow: hidden; /* This ensures no overflow if the image is larger than the container */
+  border: 5px solid #c4bbd6;
+  overflow: hidden;
+  border-radius: 100%; /* This ensures no overflow if the image is larger than the container */
 }
 
 .cardTitle {
@@ -30,27 +31,18 @@
 
 .description {
   margin-bottom: 20px;
+  color: #8575A9;
+
+font-family: Roboto;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
 }
 
-.link {
-  font-family: 'Questrial', sans-serif;
-  background-color: #E5E4F9;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: .5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: max-content;
-  height: max-content;
-  margin-top: 5px;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .link:active {
@@ -62,6 +54,7 @@
 .links {
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .socials {
@@ -70,16 +63,34 @@
   width: 110px;
 }
 
-.label {
-  width: max-content;
-  background-color: #E5E4F9;
-  padding: 5px;
-  border-radius: 10px;
-  text-transform: capitalize;
-  margin-right: 5px;
-  margin-bottom: 10px;
+ 
+  .label {
+    width: max-content;
+    background-color: transparent;
+    padding: 10px; /* Increased padding for better spacing */
+    border-radius: 20px 20px 20px 0px;
+    text-transform: capitalize;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1.5px solid #d9d0f0; /* Added border style */
+    outline: none; /* Removes the default outline */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    color: #8575A9; /* Changed the text color */
+    font-family: Roboto;
+    font-size: 0.8375rem; /* Inherits the font style from the parent */
+    line-height: normal; /* Resets the default line height */
+    -webkit-appearance: none; /* Removes default styling for WebKit browsers */
+    -moz-appearance: none; /* Removes default styling for Mozilla browsers */
+    appearance: none; /* Removes default styling for modern browsers */
+  }
+ 
+.labelText {
+  color: #8575A9;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
 .labelWrapper {
   display: flex;
   margin-bottom: 10px;
@@ -88,16 +99,16 @@
 .socialIcon {
   width: 25px;
   height: 25px;
-  color: black;
+  color: #F9F9FE;
 }
 
 .socialIconWrapper {
-  border: 1px solid black;
+  border: 1px solid #F9F9FE;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   text-align: center;
   vertical-align: middle;
   line-height: 60px;
-  background-color: #E5E4F9;
+  background-color: #8575A9;
 }

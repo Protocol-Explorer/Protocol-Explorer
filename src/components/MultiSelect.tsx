@@ -68,7 +68,7 @@ const MultiSelect: React.FC<ProtocolPageProps> = ({
   console.log({ protocols });
   return (
     <div>
-      <h2 className={styles.header}>Filter Protocols by Category</h2>
+      
       <div className={styles.protocolWrapper}>
         {categories.map((category, i) => {
           const isSelected = selectedCategories.includes(category);
