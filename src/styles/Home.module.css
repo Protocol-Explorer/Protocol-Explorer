@@ -10,21 +10,23 @@
 .header {
   /* Adjust to your preferences */
   flex-grow: 1; /* Allow the header to grow and take up space */
+  position: relative;
+  top: -100px;
 }
 
 .heading {
-  font-size: 3.5rem; /* Increase the font size */
+  font-size: 3.5vw; /* Set font size relative to viewport width */
   margin-bottom: 1rem;
-  max-width: 900px; /* Set a max-width to encourage wrapping */
+  max-width: 90vw; /* Set max-width relative to viewport width */
   text-align: left;
   line-height: 1.2; /* Adjust line-height for better readability */
   word-wrap: break-word; /* This will ensure long words do not overflow */
 }
 
 .introText {
-  font-size: 1.25rem; /* Increase the font size */
+  font-size: 1.25vw; /* Set font size relative to viewport width */
   margin-bottom: 1.5rem;
-  max-width: 900px; /* Set a max-width to encourage wrapping */
+  max-width: 90vw; /* Set max-width relative to viewport width */
   text-align: left;
   line-height: 1.2; /* Adjust line-height for better readability */
   word-wrap: break-word; /* This will ensure long words do not overflow */
@@ -41,41 +43,116 @@
 
 
 .joinButton {
-  font-family: 'Questrial', sans-serif;
-  background-color: #E5E4F9;
-  font-size: 16px;
-  letter-spacing: 2px;
+  position: absolute;
+  bottom: 15%; /* Adjust this value to position the link vertically */
+  left: 27%; /* Position link horizontally in the center */
+  transform: translateX(-50%);
+  margin-left: -1%;
+  /* Adjust button background color as needed */
+  color: #fff; /* Adjust button text color as needed */
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: .5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  font-size: 23px;
+  color: 
+  #8575A9;
+}
+.wrappedItems {
+  display: flex;
+  justify-content: space-between;
 }
 
-.joinButton:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
+.imageWrapper1,
+.exploreProtocol {
+  flex: 0 1 auto; /* Let them grow, but not shrink */
+  width: 45%; /* Initially occupy 50% of the container */
+  max-width: 100%; /* Allow them to take full width */
 }
 
 
+@media screen and (max-width: 768px) {
+  .imageWrapper1,
+  .exploreProtocol {
+    width: calc(100% - 20px); /* Adjust width to take full width on smaller screens */
+    margin-bottom: 10px; /* Reduce spacing for smaller screens */
+  }
+}
 
 .mainContent {
   position: relative; 
   width: 100%; 
   height: 600px; 
+  left:10%;
 }
 
 .imageWrapper {
+  display: inline-block; /* Ensures the SVG and text are inline */
   position: relative;
-  width: 100%;
-  height: 100%;
+}
+.text{
+  position: absolute;
+  top: 45%; /* Aligns the text to the top of the container */
+  left: 140px; /* Adjust the left position */
+  transform: translate(-50%, -50%); /* Center the text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  color: #8575A9; /* Text color */
+  font-family: Roboto; /* Font family */
+  font-size: 1.5rem; /* Font size */
+  font-style: normal; /* Font style */
+  font-weight: 200; /* Font weight */
+}
+
+
+.exploreProtocol {
+  position: relative; 
+  display: inline-block; /* Ensures the SVG and text are inline */
+}
+
+.additionalSVG {
+  position: absolute;
+  top: 50%; /* Aligns the SVG to the bottom of the container */
+  left: 10%; /* Adjust the left position */
+  transform: translate(-50%, -50%); /* Center the SVG */
+}
+
+.wrappedItems .textWrapper {
+  position: absolute; /* Position the text wrapper */
+  left: 8%; /* Adjust the left position */
+  top: 95%; /* Adjust the top position */
+  white-space: nowrap; /* Prevent text from wrapping */
+  color: #8575A9; /* Text color */
+  font-family: Roboto; /* Font family */
+  font-size: 1.5rem; /* Font size */
+  font-style: normal; /* Font style */
+  font-weight: 200; /* Font weight */
+}
+
+.img {
+  width: 260px;
+height: 58px;
+  margin-right: 20px; /* Adjust as needed */
+  
+}
+.img1 {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+}
+.protocolText{
+  position: absolute; /* Position the text absolutely */
+  top: 25%; /* Aligns the text vertically centered */
+  left: 15%; /* Aligns the text horizontally centered */
+  white-space: nowrap;/* Centers the text properly */
+  color: #000000; /* Text color */
+  font-family: Roboto; /* Font family */
+  font-size:1.4375rem; /* Font size */
+  font-weight: 400; 
+  font-style: normal;
 }
 
 .main {
@@ -324,6 +401,7 @@
   }
   .containerHome {
     min-height: 80vh;
+    display: flex;
   }
   .editorContainer {
     width: 90%;
@@ -332,6 +410,34 @@
   }
 }
 
+.textWrapper{
+  color :#8575a9;
+  font-family: "Roboto-Light";
+  font-size: auto;
+  font-weight: auto;
+  white-space: nowrap;
+}
+
+.worldOf {
+  height: 25vh; /* 10% of the viewport height */
+  left: 0.3vw; /* 10% of the viewport width */
+  position: relative;
+  top: 21vh; /* 20% of the viewport height */
+  width: 25vw; /* 25% of the viewport width */
+  color: #8575a9;
+  font-size: 1.2vw; /* 1.5% of the viewport width */
+}
+
+
+.arrow{
+  height: 20px;
+}
+.arrowDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5%;
+}
 
 @keyframes rotate {
   from {
