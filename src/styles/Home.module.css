@@ -59,9 +59,12 @@
 }
 .wrappedItems {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align items at the start of the container */
 }
 
+.joinTelegram {
+  margin-right: 10px; /* Adjust the gap between elements */
+}
 .imageWrapper1,
 .exploreProtocol {
   flex: 0 1 auto; /* Let them grow, but not shrink */
@@ -104,8 +107,10 @@
 
 
 .exploreProtocol {
-  position: relative; 
+  position: relative; /* Position the container relative to its parent */
   display: inline-block; /* Ensures the SVG and text are inline */
+  width: 214px; /* Set the width to match the SVG width */
+  height: 59px; /* Set the height to match the SVG height */
 }
 
 .additionalSVG {
@@ -150,7 +155,7 @@ height: 58px;
   white-space: nowrap;/* Centers the text properly */
   color: #000000; /* Text color */
   font-family: Roboto; /* Font family */
-  font-size:1.4375rem; /* Font size */
+  font-size: 1.4375rem; /* Font size */
   font-weight: 400; 
   font-style: normal;
 }

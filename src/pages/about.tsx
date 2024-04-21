@@ -3,11 +3,12 @@ import React from 'react';
 import styles from "@/styles/about.module.css"
 import Navbar from '@/components/Navbar';
 import TelegramCall from '@/components/TelegramCall';
+import Footer from '@/components/Footer';
 
 const About = () => {
   return (
     <div className={styles.page}>
-      <TelegramCall />
+      
       <Navbar />
       <p className={styles.intro}>
         Learning to code is broken...we are here to fix it with Protocol Explorer. We have a bias towards making sure you master the fundamentels while getting your hands on a keyboard as quickly as possible. 
@@ -37,6 +38,7 @@ const About = () => {
           </div>
         </div>
       </div>
+    <Footer/>
     </div>
   );
 }

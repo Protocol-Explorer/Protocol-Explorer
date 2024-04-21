@@ -27,27 +27,43 @@ const ProtocolCard: React.FC<ProtocolCardProps> = ({
   discordLink,
   slug,
 }) => {
+  const calculateFontSize = (label: string, svgWidth: number) => {
+    const factor = 10;
+    const minWidth = 200; // Minimum width for the SVG container
+    const calculatedWidth = label.length * factor;
+    const fontSize = Math.floor(svgWidth / (calculatedWidth / factor));
+
+    // Ensure font size is not too small or too large
+    return Math.max(Math.min(fontSize, 16), 8);
+  };
   return (
     <div className={styles.card}>
-      <div className={styles.iconWrapper}>
-        <Image
-          src={logo}
-          alt={`${name} logo`}
-          layout="responsive"
-          width={70} // standardWidth to fit within the iconWrapper with some padding
-          height={70} // standardHeight to match the width and maintain aspect ratio
-          objectFit="contain"
-          quality={100} // assuming you want the best quality
-        />
+      <div className={styles.wrapper}>
+        <div className={styles.iconWrapper}>
+          <Image
+            src={logo}
+            alt={`${name} logo`}
+            layout="responsive"
+            width={70}
+            height={70}
+            objectFit="contain"
+            quality={100}
+          />
+        </div>
+        <a href={slug} className={styles.link}>
+          <img src="/learnMore.svg" alt="Learn More" />
+        </a>
       </div>
       <h3 className={styles.cardTitle}>{name}</h3>
       <p className={styles.description}>{description}</p>
       <div className={styles.labelWrapper}>
-        {labels.map((label, i) => (
-          <p className={styles.label} key={i}>
-            {label}
-          </p>
-        ))}
+        <div className={styles.labelWrapper}>
+          {labels.map((label, i) => (
+            <label key={i} className={styles.label}>
+              {label}
+            </label>
+          ))}
+        </div>
       </div>
       <div className={styles.links}>
         <div className={styles.socials}>
@@ -66,9 +82,6 @@ const ProtocolCard: React.FC<ProtocolCardProps> = ({
             <FontAwesomeIcon className={styles.socialIcon} icon={faDiscord} />
           </a>
         </div>
-        <Link href={slug} className={styles.link}>
-          Learn More
-        </Link>
       </div>
     </div>
   );

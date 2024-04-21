@@ -1,0 +1,180 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f1f1fc;
+  border-radius: 20px 20px 20px 0;
+  padding: 20px;
+  margin-top: auto; /* Push the container to the bottom */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+  min-height: 100vh; /* Set minimum height to 100% of viewport height */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 20px;
+  margin-top: auto;
+  top: 10px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    flex-wrap: wrap;
+  }
+}
+
+.teamSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  color: #000;
+  font: 500 24px Poppins, sans-serif;
+}
+
+.teamMemberImages {
+  margin-left: auto; /* This will push the actions to the right */
+  display: flex;
+  gap: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    white-space: initial;
+  }
+}
+
+.navItem {
+  font-family: Roboto, sans-serif;
+  margin-top: 33px;
+}
+
+.navItemProtocol,
+.navItemResources {
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.joinSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.joinTelegram {
+  display: flex;
+  flex-direction: column;
+  fill: #e4e4f9;
+  position: relative;
+  margin-top: 2px;
+  right: 25px;
+  gap: 8px;
+  font-size: 23px;
+  color: #8575a9;
+  font-weight: 400;
+  padding: 18px 17px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+}
+.footerLink,
+.separator {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.copyright {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-right: auto;
+}
+
+.additionalSVG {
+  position: absolute;
+  top: 50%; /* Aligns the SVG to the bottom of the container */
+  left: 10%; /* Adjust the left position */
+  transform: translate(-50%, -50%); /* Center the SVG */
+}
+.imageWrapper {
+  display: inline-block; /* Ensures the SVG and text are inline */
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 45%; /* Aligns the text to the top of the container */
+  left: 140px; /* Adjust the left position */
+  transform: translate(-50%, -50%); /* Center the text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  color: #8575a9; /* Text color */
+  font-family: Roboto; /* Font family */
+  font-size: 1.5rem; /* Font size */
+  font-style: normal; /* Font style */
+  font-weight: 200; /* Font weight */
+}
+
+.footer {
+  display: flex;
+  margin-top: 235px;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  font-size: 22px;
+  color: #000;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.circle {
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures the image stays within the circular boundary */
+
+  width: 50px; /* Set the size of the circle */
+  height: 50px;
+  border: 3px solid #cdcded; /* Example: A solid border with a light color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle shadow for depth */
+}
+.circle img {
+  width: 100%; /* Make the image fill the circle */
+  height: 100%; /* Make the image fill the circle */
+  object-fit: cover; /* Scale the image while maintaining aspect ratio */
+}
+
+@media (max-width: 991px) {
+  .footer {
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+.separator {
+}

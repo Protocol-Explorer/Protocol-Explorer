@@ -1,6 +1,11 @@
 .purpleContainer{
   width: 85.5rem;
   height: 50.625rem;
+  position: relative; /* or absolute */
+  top: 30%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -325px;
   
 }
 .div {

@@ -9,6 +9,8 @@ import ProtocolCard from "@/components/ProtocolCard";
 import { useState } from "react";
 import MultiSelect from "@/components/MultiSelect";
 
+import Image from "next/image";
+
 interface Protocol {
   name: string;
   website: string;
@@ -38,6 +40,15 @@ export default function Explore({ protocols }: ProtocolPageProps) {
       </Head>
       <TelegramCall />
       <Navbar />
+      <div className={styles.centerImg}>
+      <Image
+        className={styles.circleSvg}
+        src="/jutsu.jpg"
+        alt="Jutsu"
+        width={100}
+        height={100}
+      />
+      </div>
       <h1 className={styles.header}>Explore the World of Web3</h1>
       <MultiSelect protocols={protocols} setProtocolData={setProtocolData} />
       <main className={styles.main}>

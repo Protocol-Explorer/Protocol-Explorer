@@ -82,7 +82,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1;
-    left: 50px;
+    left: 40px;
   }
   
 .labelSVG {
@@ -193,11 +193,11 @@
 
 
 
-.frame .textWrapper {
+.textWrapper {
   left: 8%;
   width: 100%;
   position: absolute;
-  top: 6px;
+  top: 25%;
   white-space: nowrap;
   color: #8575A9;
   font-family: Roboto;
