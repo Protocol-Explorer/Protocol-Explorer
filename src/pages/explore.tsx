@@ -8,7 +8,9 @@ import styles from "@/styles/explore.module.css";
 import ProtocolCard from "@/components/ProtocolCard";
 import { useState } from "react";
 import MultiSelect from "@/components/MultiSelect";
+
 import Image from "next/image";
+
 interface Protocol {
   name: string;
   website: string;
