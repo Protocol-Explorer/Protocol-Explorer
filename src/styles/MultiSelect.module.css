@@ -15,9 +15,9 @@
 
 .label {
   width: max-content;
-  background-color: #E5E4F9;
+  background-color: #e4e4f9;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 20px 20px 20px 0px;
   text-transform: capitalize;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -25,15 +25,16 @@
   outline: none; /* Removes the default outline */
   cursor: pointer; /* Changes cursor to pointer on hover */
   color: inherit; /* Inherits the font color from the parent */
-  font: inherit; /* Inherits the font style from the parent */
+  color: #8575a9;
+  font-family: Roboto;
+  font-size: 0.9375rem; /* Inherits the font style from the parent */
   line-height: normal; /* Resets the default line height */
   -webkit-appearance: none; /* Removes default styling for WebKit browsers */
   -moz-appearance: none; /* Removes default styling for Mozilla browsers */
   appearance: none; /* Removes default styling for modern browsers */
   padding: 10px;
-
 }
 
 .selected {
-  background-color: #C9C2B7; /* A different color to indicate selection */
+  background-color: #c9c2b7; /* A different color to indicate selection */
 }

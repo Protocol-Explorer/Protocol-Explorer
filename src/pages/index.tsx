@@ -4,9 +4,11 @@ import Navbar from "@/components/Navbar";
 import TelegramCall from "@/components/TelegramCall";
 import Image from "next/image";
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
+    
     <>
       <Head>
         <title>Protocol Explorer</title>
@@ -122,6 +124,7 @@ export default function Home() {
         </div>
       </div>
       <Features />
+     
     </>
-  );
+  ); 
 }
