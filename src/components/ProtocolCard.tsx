@@ -59,7 +59,9 @@ const ProtocolCard: React.FC<ProtocolCardProps> = ({
       <div className={styles.labelWrapper}>
         <div className={styles.labelWrapper}>
           {labels.map((label, i) => (
-            <label className={styles.label}>{label}</label>
+            <label key={i} className={styles.label}>
+              {label}
+            </label>
           ))}
         </div>
       </div>
