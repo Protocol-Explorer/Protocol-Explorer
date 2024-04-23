@@ -124,7 +124,6 @@ export default function Home() {
         </div>
       </div>
       <Features />
-     
     </>
   ); 
 }

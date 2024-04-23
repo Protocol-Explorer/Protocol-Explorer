@@ -3,42 +3,66 @@
   flex-direction: column;
   align-items: center;
 }
-
+.heading{
+  display:flex;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .card {
   margin-top: 5%;
-  background-color: #F8F8F8;
-  border-radius: 10px;
+  margin-right:auto;
+  background-color: #ffffff;
+  border-radius: 20px 20px 20px 0px;
   padding: 30px;
   margin-bottom: 20px;
-  width: 80%; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
   text-align: center;
-  border: 1px solid #c0c0c0; /* Light grey border */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), /* Shadow for depth */
-              -1px -1px 5px rgba(255, 255, 255, 0.7); /* Lighter shadow for 3D effect */
+  border: 1px solid #ffffff; /* Light grey border */
 }
 
 .card h2 {
   margin: 0 0 10px 0;
 }
 
+.socialIcon {
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+}
+
+
+.socials {
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  width: 30%;
+  margin-top: auto;
+  margin-left: auto;
+}
 
 .link {
-  font-family: 'Questrial', sans-serif;
-  background-color: #E5E4F9;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: .5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-right: 15px;
+  background-color: #8575a9;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  padding: 0.35rem;
+  margin-right: 10px;
+  margin-bottom: 1px;
+}
+.title {
+  margin-right: auto;
+  color: #8575a9;
+  font-family: Poppins;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .link:active {
@@ -46,9 +70,26 @@
   top: 5px;
   left: 5px;
 }
-
+.link2 {
+  font-family: "Roboto";
+  background-color: #8575a9;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 20px 20px 20px 0px;
+  padding: 0.5em;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 35px;
+  white-space: nowrap;
+  margin-top: 5px;
+}
 .byline {
-  margin-bottom: 25px;
+  display:flex;
+  margin-bottom: -50px;
 }
 
 @media screen and (max-width: 425px) {
