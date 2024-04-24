@@ -9,6 +9,10 @@
   width: 20.25rem;
   height: 24.875rem;
 }
+.card:hover {
+  transform: translateY(-5px); /* Card pops up a bit on hover */
+  box-shadow: 0 6px 12px rgba(153, 78, 160, 0.15); /* Adds a subtle lift effect */
+}
 
 .iconWrapper {
   display: flex;
