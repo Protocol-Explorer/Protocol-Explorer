@@ -80,16 +80,7 @@
   max-width: 100%; /* Allow them to take full width */
 }
 
-@media screen and (max-width: 499px) {
-  .containerHome {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      width: 200%;
-      margin-top: -50%;
-      margin-left: -7%;
-  }
-}
+
 
 @media screen and (max-width: 499px) {
  
