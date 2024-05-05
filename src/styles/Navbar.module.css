@@ -6,10 +6,6 @@
   padding: 10px 20px;
 }
 
-.menuIcon {
-  /* Styles for the menu icon */
-}
-
 .burgerLines {
   display: block;
   width: 25px;
@@ -23,7 +19,7 @@
   display: flex;
   align-items: center;
   /* Increase spacing between links if needed */
-  gap: 20px; 
+  gap: 20px;
 }
 
 .navLink {
@@ -41,7 +37,7 @@
 
 .navLink:hover,
 .navLink:focus {
-  color: #C9C2B7;
+  color: #c9c2b7;
 }
 
 .navActions {
@@ -56,7 +52,7 @@
   display: inline-block; /* Aligns the image correctly */
   width: 50px; /* Set the size of the circle */
   height: 50px;
-  border: 3px solid #C9C2B7; /* Example: A solid border with a light color */
+  border: 3px solid #c9c2b7; /* Example: A solid border with a light color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle shadow for depth */
 }
 
@@ -73,26 +69,26 @@
   border: none;
   display: block;
   cursor: pointer;
-} 
+}
 
-  .explorerText {
-    color: #8575A9;
-    font-family: Roboto;
-    font-size: 1.4375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    left: 40px;
-  }
-  
+.explorerText {
+  color: #8575a9;
+  font-family: Roboto;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  left: 40px;
+}
+
 .labelSVG {
   width: auto;
   height: auto;
 }
 
 .joinButton {
-  font-family: 'Questrial', sans-serif;
-  background-color: #E5E4F9;
+  font-family: "Questrial", sans-serif;
+  background-color: #e5e4f9;
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
@@ -100,8 +96,9 @@
   color: #000;
   cursor: pointer;
   border: 3px solid;
-  padding: .5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  padding: 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
   position: relative;
   user-select: none;
   -webkit-user-select: none;
@@ -131,11 +128,35 @@
     margin: 10px 0;
   }
 }
-
-@media screen and (max-width: 425px) {
-  .burgerLines {
-    display: none; /* Hide burger menu icon on smaller screens */
+@media screen and (max-width: 399px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
+  .navLinks {
+    display: flex; /* display: none; */
+     flex-direction: column;
+     
+     border-top: 1px solid #020202;
+     padding: 2rem 0;
+     opacity: 0;
+     visibility: hidden;
+     z-index: -1; /* Move the menu behind the content initially */
+     background-color: transparent;
+   }
+   .showNav {
+     opacity: 1;
+     visibility: visible;
+     z-index: 999;
+   }
+   .navLink{
+    margin-left: 50px;
+   }
+   .navActions {
+     display: none;
+   }
+}
+@media screen and (max-width: 425px) {
   .navActions {
     margin-right: auto;
     margin-left: 0;
@@ -169,69 +190,228 @@
   width: 90px;
   position: absolute;
   top: 9px;
-  left:65%; /* Center the element horizontally */
+  left: 65%; /* Center the element horizontally */
   /* Move the element back to the left by 50% of its width */
 }
-
+.overlapGroup {
+  background-color: white;
+}
 @media screen and (max-width: 768px) {
   /* Adjust styles for screens smaller than 768px (tablet and below) */
   .frame .overlapGroupWrapper {
+    display: flex;
     width: 70px; /* Adjust width for smaller screens */
-    left: 50%; /* Center the element horizontally */
-    transform: translateX(-50%); /* Move the element back to the left by 50% of its width */
+
+    /* Move the element back to the left by 50% of its width */
   }
 }
-
+@media screen and (max-width: 390px) {
+  .navbarContainer {
+    flex-direction: row;
+    width: 50px;
+    margin-left: -38%;
+  }
+  .navbar {
+    width: 5px;
+    margin-left: -18%;
+  }
+  .grupo {
+    width: 10px;
+    height: 10px;
+  }
+  .overlapGroupWrapper {
+    width: 1rem;
+    height: 1rem;
+  }
+  .overlapGroup {
+    width: 1rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  .navbarContainer {
+    flex-direction: row;
+    width: 10px;
+    margin-left: -44%;
+  }
+}
+@media screen and (max-width: 799px) {
+  .navbarContainer {
+    flex-direction: row;
+    width: 10px;
+    margin-left: -8%;
+    min-height: 2vh;
+  }
+}
 @media screen and (max-width: 480px) {
   /* Adjust styles for screens smaller than 480px (mobile) */
   .frame .overlapGroupWrapper {
-    width: 50px; /* Adjust width for smaller screens */
-    left: 50%; /* Center the element horizontally */
-    transform: translateX(-50%); /* Move the element back to the left by 50% of its width */
+    width: 30px; /* Adjust width for smaller screens */
+    left: 79%; /* Center the element horizontally */
+    margin-left: -15%; /* Move the element back to the left by 50% of its width */
   }
 }
 
-
-
 .textWrapper {
-  left: 8%;
+  left: -30%;
   width: 100%;
   position: absolute;
   top: 25%;
   white-space: nowrap;
-  color: #8575A9;
+  color: #8575a9;
   font-family: Roboto;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 200;
+  background-color: #e5e4f9;
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px 20px 20px 0px;
 }
 
 @media screen and (max-width: 768px) {
   /* Adjust styles for screens smaller than 768px (tablet and below) */
-  .frame .textWrapper {
-    width: 70%; /* Adjust width for smaller screens */
+  .textWrapper {
+    width: 80%;
+    font-size: 0.8rem;
+    padding: 6.5%; /* Adjust width for smaller screens */
+    left: -40%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  /* Adjust styles for screens smaller than 480px (mobile) */
-  .frame .textWrapper {
-    width: 50%; /* Adjust width for smaller screens */
-    font-size: 1rem; /* Adjust font size for smaller screens */
+@media screen and (max-width: 499px) {
+  .burgerButton{
+    margin-left: -500%;
+  }
+  .textWrapper {
+    width: 140%; /* Adjust width for smaller screens */
+    font-size: 0.6rem;
+    padding: 6%; /* Adjust font size for smaller screens */
+    left: -470%;
+    top: 40%;
+  }
+.frame .grupo{
+    height: 54px;
+    left: 9%;
+    position: relative;
+    top: 20px;
+    width: 365px;
+  }
+  .frame {
+    margin-left: -1.9rem;
+  }
+
+  .frame .path {
+    height: 30px;
+    top: 30%;
+    width: 30px;
+  }
+
+  .frame .caminho {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    left: 8%;
+    position: absolute;
+    top: 45%;
+    color: black;
+  }
+}
+@media screen and (max-width: 399px) {
+  .burgerButton{
+  margin-left: 50%;
+  }/* Adjust styles for screens smaller than 480px (mobile) */
+  .textWrapper {
+    width: 140%; /* Adjust width for smaller screens */
+    font-size: 0.6rem;
+    padding: 8% -1px; /* Adjust font size for smaller screens */
+    left: -470%;
+    top: 45%;
+  }
+  .frame {
+    width: 80%;
+    margin-left: 1rem;
+  }
+  .frame .grupo{
+    height: 54px;
+    left: 9%;
+    position: relative;
+    top: 20px;
+    width: 365px;
+  }
+  .frame .path {
+    height: 30px;
+    top: 30%;
+    width: 30px;
+  }
+  .frame .caminho {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    left: 8%;
+    position: absolute;
+    top: 45%;
+    color: black;
   }
 }
 
-
-.frame .caminho {
-  height: 25px;
-  left: 54px;
+.caminho {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 2.5rem;
+  left: 15%;
   position: absolute;
-  top: 15px;
-  width: 170px;
+  top: 12%;
+  color: black;
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 799px) {
   .navLinks {
-    gap: 10px;
+   display: flex; /* display: none; */
+    flex-direction: column;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin-top: -10px;
+    height: -10px;
+    border-top: 1px solid #020202;
+    padding: 2rem 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1; /* Move the menu behind the content initially */
+    background-color: transparent;
+  }
+  .showNav {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+  .navActions {
+    display: none;
+  }
+}
+
+.burgerButton {
+  display: none;
+}
+@media screen and (max-width: 499px) {
+  .burgerButton {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+
+  .burgerButton .span {
+    width: 30px;
+    height: 2px;
+    margin: 2px; /* Adjust spacing between spans */
+    background-color: #020202; /* Set color for the spans */
+  }
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
   }
 }
