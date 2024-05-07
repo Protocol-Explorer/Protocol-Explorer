@@ -133,17 +133,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .navLinks {
-    display: flex; /* display: none; */
-     flex-direction: column;
-     
-     border-top: 1px solid #020202;
-     padding: 2rem 0;
-     opacity: 0;
-     visibility: hidden;
-     z-index: -1; /* Move the menu behind the content initially */
-     background-color: transparent;
-   }
    .showNav {
      opacity: 1;
      visibility: visible;
@@ -151,6 +140,7 @@
    }
    .navLink{
     margin-left: 50px;
+    
    }
    .navActions {
      display: none;
@@ -162,6 +152,7 @@
     margin-left: 0;
     margin-top: 10px;
   }
+
 }
 
 .frame {
@@ -275,25 +266,31 @@
     padding: 6.5%; /* Adjust width for smaller screens */
     left: -40%;
   }
-}
+  .frame {
+    margin-left: -1.9rem;
+  }
 
+}
 @media screen and (max-width: 499px) {
   .burgerButton{
-    margin-left: -500%;
+    margin-top: -25px;
+    margin-left: -80px;
   }
+}
+@media screen and (max-width: 499px) {
   .textWrapper {
-    width: 140%; /* Adjust width for smaller screens */
+    width: 130%; /* Adjust width for smaller screens */
     font-size: 0.6rem;
-    padding: 6%; /* Adjust font size for smaller screens */
-    left: -470%;
-    top: 40%;
+    padding: 5% ; /* Adjust font size for smaller screens */
+    left: 70%;
+    top: 45%;
   }
 .frame .grupo{
     height: 54px;
     left: 9%;
     position: relative;
-    top: 20px;
-    width: 365px;
+    top: 3px;
+    width: 100px;
   }
   .frame {
     margin-left: -1.9rem;
@@ -304,12 +301,11 @@
     top: 30%;
     width: 30px;
   }
-
   .frame .caminho {
     font-family: Roboto;
     font-weight: 900;
     font-size: 1rem;
-    left: 8%;
+    left:25%;
     position: absolute;
     top: 45%;
     color: black;
@@ -317,14 +313,14 @@
 }
 @media screen and (max-width: 399px) {
   .burgerButton{
-  margin-left: 50%;
+  margin-left: 270px;
   }/* Adjust styles for screens smaller than 480px (mobile) */
   .textWrapper {
     width: 140%; /* Adjust width for smaller screens */
     font-size: 0.6rem;
     padding: 8% -1px; /* Adjust font size for smaller screens */
-    left: -470%;
-    top: 45%;
+    left: 180%;
+    top: 15%;
   }
   .frame {
     width: 80%;
@@ -335,20 +331,21 @@
     left: 9%;
     position: relative;
     top: 20px;
-    width: 365px;
+    width: 100px;
   }
   .frame .path {
     height: 30px;
-    top: 30%;
+    top: 10%;
     width: 30px;
+    left:30%;
   }
   .frame .caminho {
     font-family: Roboto;
     font-weight: 900;
     font-size: 1rem;
-    left: 8%;
+    left: 55%;
     position: absolute;
-    top: 45%;
+    top: 25%;
     color: black;
   }
 }
@@ -378,7 +375,7 @@
     opacity: 0;
     visibility: hidden;
     z-index: -1; /* Move the menu behind the content initially */
-    background-color: transparent;
+    background-color: white;
   }
   .showNav {
     opacity: 1;

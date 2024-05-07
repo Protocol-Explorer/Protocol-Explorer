@@ -1,4 +1,3 @@
-
 .container {
   display: flex;
   flex-direction: row;
@@ -12,7 +11,6 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-  
 }
 
 .header {
@@ -20,6 +18,20 @@
   flex-grow: 1; /* Allow the header to grow and take up space */
   position: relative;
   top: -100px;
+}
+@media screen and (max-width: 499px) {
+  .header {
+    left: 1%;
+  }
+  
+}
+@media screen and (max-width: 399px) {
+  .header {
+    left: 10%;
+  }
+  .introText{
+    margin-left: 1%;
+  }
 }
 
 .heading {
@@ -40,106 +52,108 @@
   word-wrap: break-word; /* This will ensure long words do not overflow */
 }
 
-
-
 .ctaButtons {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
 }
+.additionalSVG{
+  top:2px;
 
-
+}
 .joinButton {
   position: absolute;
   bottom: 15%; /* Adjust this value to position the link vertically */
   left: 27%; /* Position link horizontally in the center */
   transform: translateX(-50%);
   margin-left: -1%;
-  /* Adjust button background color as needed */
   color: #fff; /* Adjust button text color as needed */
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 23px;
-  color: 
-  #8575A9;
+  color: #8575a9;
 }
 .wrappedItems {
-  display: flex;
-  justify-content: flex-start; /* Align items at the start of the container */
+  display: flex; 
+  flex-direction: row;/* Use flexbox */
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Align items at the start of the container */
 }
 
 .joinTelegram {
-  margin-right: 10px; /* Adjust the gap between elements */
+  margin-left: -10px; /* Adjust the gap between elements */
 }
-.imageWrapper1,
-.exploreProtocol {
-  flex: 0 1 auto; /* Let them grow, but not shrink */
-  width: 45%; /* Initially occupy 50% of the container */
-  max-width: 100%; /* Allow them to take full width */
+.mainContent {
+  margin-left: 30%;
+  margin-top: -10%;
+  width: 100vh;
+  height: 100vh;
 }
-
-
-
 @media screen and (max-width: 499px) {
- 
-  .imageWrapper1{
+  .imageWrapper1 {
     margin-top: 10%;
   }
   .mainContent {
     display: flex;
     flex-direction: column-reverse;
-    position: relative; 
-    width: 100%; 
-    height: 600px; 
-    top:10%;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    top: 10%;
   }
 }
 
 @media screen and (max-width: 399px) {
-
-  .container{
+  .container {
     display: flex;
     flex-direction: column-reverse;
   }
+  .mainContent {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    left: 10%;
+  }
 }
-
 .mainContent {
-  position: relative; 
-  width: 100%; 
-  height: 600px; 
-  left:10%;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  left: -20%;
+  top: 30%;
 }
 
 .imageWrapper {
   display: inline-block; /* Ensures the SVG and text are inline */
   position: relative;
 }
-.text{
+.text {
   position: absolute;
   top: 45%; /* Aligns the text to the top of the container */
   left: 140px; /* Adjust the left position */
   transform: translate(-50%, -50%); /* Center the text */
   white-space: nowrap; /* Prevent text from wrapping */
-  color: #8575A9; /* Text color */
+  color: #8575a9; /* Text color */
   font-family: Roboto; /* Font family */
   font-size: 1.5rem; /* Font size */
   font-style: normal; /* Font style */
   font-weight: 200; /* Font weight */
+  background-color: #E4E4F9;
+  padding: 0.9rem 0.5rem;
+  border-radius: 30px 30px 30px 0px;
 }
-
 
 .exploreProtocol {
   position: relative; /* Position the container relative to its parent */
   display: inline-block; /* Ensures the SVG and text are inline */
   width: 214px; /* Set the width to match the SVG width */
   height: 59px; /* Set the height to match the SVG height */
-}
-
-.additionalSVG {
-  position: absolute;
-  top: 50%; /* Aligns the SVG to the bottom of the container */
+  margin-left: 320px; 
+  top:35px;
+  border: 2px solid #E8F0F8;
+  border-radius: 30px 30px 30px 0px;
   left: 10%; /* Adjust the left position */
   transform: translate(-50%, -50%); /* Center the SVG */
 }
@@ -149,7 +163,7 @@
   left: 8%; /* Adjust the left position */
   top: 95%; /* Adjust the top position */
   white-space: nowrap; /* Prevent text from wrapping */
-  color: #8575A9; /* Text color */
+  color: #8575a9; /* Text color */
   font-family: Roboto; /* Font family */
   font-size: 1.5rem; /* Font size */
   font-style: normal; /* Font style */
@@ -158,9 +172,8 @@
 
 .img {
   width: 260px;
-height: 58px;
+  height: 58px;
   margin-right: 20px; /* Adjust as needed */
-  
 }
 .img1 {
   position: absolute;
@@ -172,15 +185,15 @@ height: 58px;
   display: flex;
   align-items: center;
 }
-.protocolText{
+.protocolText {
   position: absolute; /* Position the text absolutely */
   top: 25%; /* Aligns the text vertically centered */
   left: 15%; /* Aligns the text horizontally centered */
-  white-space: nowrap;/* Centers the text properly */
+  white-space: nowrap; /* Centers the text properly */
   color: #000000; /* Text color */
   font-family: Roboto; /* Font family */
   font-size: 1.4375rem; /* Font size */
-  font-weight: 400; 
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -424,9 +437,14 @@ height: 58px;
 
 @media screen and (max-width: 600px) {
   .container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
+    height: 200%;
+    margin-top: -50%;
+    margin-left: 15%;
   }
   .containerHome {
     min-height: 80vh;
@@ -439,14 +457,24 @@ height: 58px;
   }
 }
 
-.textWrapper{
-  color :#8575a9;
+.textWrapper {
+  color: #8575a9;
   font-family: "Roboto-Light";
   font-size: auto;
   font-weight: auto;
   white-space: nowrap;
 }
 
+@media screen and (max-width: 499px) {
+  .worldOf {
+    height: 25vh; /* 10% of the viewport height */
+    left: 0.3vw; /* 10% of the viewport width */
+    position: relative;
+    top: 21vh; /* 20% of the viewport height */
+    width: 25vw; /* 25% of the viewport width */
+    color: #8575a9; /* 1.5% of the viewport width */
+  }
+}
 .worldOf {
   height: 25vh; /* 10% of the viewport height */
   left: 0.3vw; /* 10% of the viewport width */
@@ -454,18 +482,36 @@ height: 58px;
   top: 21vh; /* 20% of the viewport height */
   width: 25vw; /* 25% of the viewport width */
   color: #8575a9;
-  font-size: 1.2vw; /* 1.5% of the viewport width */
+  font-size: 2.2vw; /* 1.5% of the viewport width */
 }
 
-
-.arrow{
+.arrow {
   height: 20px;
 }
-.arrowDetails{
+.arrowDetails {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0.5%;
+}
+@media screen and (max-width: 499px) {
+  .arrowDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5%;
+    margin-left: -15%;
+  }
+  .introText {
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+  .worldOf{
+    font-size: 1.1rem;
+  }
+  .heading{
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes rotate {

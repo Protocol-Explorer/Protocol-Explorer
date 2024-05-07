@@ -1,38 +1,53 @@
 .purpleContainer{
-  width: 85.5rem;
-  height: 50.625rem;
+  width: 80.5rem;
+  height: 30.625rem;
   position: relative; /* or absolute */
-  top: 30%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -325px;
+  margin-left: 25px;
   
 }
 .div {
+  padding: 5% 3%;
   position: relative;
   display: flex;
   margin-top: 11px;
   width: 100%;
   max-width: 1506px;
   flex-direction: column;
+  background-color: #8575A9; 
+  border-radius: 30px 30px 30px 0px;
 }
-
-@media (max-width: 991px) {
-  .div {
-    max-width: 100%;
+@media (max-width: 459px) {
+  .div{
+      max-width: 26%;
+      height: 400px;
   }
 }
+@media (max-width: 499px) {
+.div4{
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  height: 40%;
+  scroll-snap-type: x mandatory; 
+}
+.div4::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Edge, and Safari */
+}
 
+}
 .div2 {
   color: #fff;
   align-self: center;
   font: 700 64px Roboto, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div2 {
-    max-width: 100%;
-    font-size: 40px;
+      max-width: 100%;
+      font-size: 25px;
+      margin-top: -10%;
   }
 }
 
@@ -40,25 +55,18 @@
   margin-top: 101px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div3 {
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 12px;
+    margin-left: 7%;
   }
 }
-
 .div4 {
   gap: 20px;
   display: flex;
 }
 
-@media (max-width: 991px) {
-  .div4 {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0px;
-  }
-}
 
 .column {
   display: flex;
@@ -90,10 +98,10 @@
   padding: 1% 1%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div5 {
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 0px;
     padding: 0 20px;
   }
 }
@@ -115,6 +123,12 @@
   fill: #000;
   margin-left: 8px;
 }
+@media (max-width: 459px) {
+  .img2{
+    margin-left: -15px;
+    width: 25%;
+  }
+}
 
 .div6 {
   position: relative;
@@ -123,9 +137,11 @@
   font: 500 28px Poppins, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div6 {
-    margin-left: 10px;
+    margin-left: -10%;
+    margin-top: 10%;
+    font-size: 16px;
   }
 }
 
@@ -135,9 +151,12 @@
   margin: 12px 0 0 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div7 {
-    margin-left: 10px;
+    left: -20px;
+    font-size: 10px;
+    top: 2px;
+    width: 134px;
   }
 }
 
@@ -147,9 +166,12 @@
   margin: 11px 0 0 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width:459px) {
   .div8 {
-    margin-left: 10px;
+    left: -20px;
+    font-size: 10px;
+    top: 2px;
+    width: 134px;
   }
 }
 
@@ -159,9 +181,12 @@
   margin: 12px 0 0 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width:459px) {
   .div9 {
-    margin-left: 10px;
+    left: -62px;
+    font-size: 10px;
+    top: 2px;
+    width: 134px;
   }
 }
 
@@ -173,9 +198,12 @@
   margin-top: 20px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .img3 {
-    margin-top: 40px;
+    object-fit: auto;
+    object-position: center;
+    margin-top: 6px;
+width: 2px;
   }
 }
 
@@ -191,7 +219,10 @@
 
 @media (max-width: 991px) {
   .img4 {
-    margin: 40px 0 0 10px;
+    height: 37%;
+        width: 56%;
+        margin: -202px 0 0 11px;
+        left: 28%;
   }
 }
 
@@ -218,11 +249,11 @@
   padding: 1% 1%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div10 {
     max-width: 100%;
-    margin-top: 40px;
-    padding: 0 20px;
+        margin-top: 0px;
+        padding: 0px 20px;
   }
 }
 
@@ -235,9 +266,10 @@
   margin-left: 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .img5 {
-    margin-left: 10px;
+    margin-left: -16px;
+        width: 21%;
   }
 }
 
@@ -248,21 +280,25 @@
   font: 500 28px Poppins, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div11 {
-    margin-left: 10px;
+    margin-left: -5%;
+    margin-top: 8%;
+    font-size: 16px;
   }
 }
-
 .div12 {
   position: relative;
   font-family: Roboto, sans-serif;
   margin: 19px 0 0 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div12 {
-    margin-left: 10px;
+    margin-left: -65px;
+    font-size: 10px;
+    width: 300px;
+    margin-top: 5%;
   }
 }
 
@@ -272,9 +308,12 @@
   margin: 11px 0 0 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div13 {
-    margin-left: 10px;
+    margin-left: -65px;
+    font-size: 10px;
+    width: 300px;
+    margin-top: 5%;
   }
 }
 
@@ -284,9 +323,12 @@
   margin: 15px 0 0 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div14 {
-    margin-left: 10px;
+    margin-left: -65px;
+    font-size: 10px;
+    width: 300px;
+    margin-top: 5%;
   }
 }
 /* Grupo 164966 */
@@ -302,9 +344,9 @@
   margin-top: 13px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .img6 {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
 
@@ -320,9 +362,11 @@
 
 
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .img7 {
     margin-left: 10px;
+    margin-top: -70%;
+    height: 15%;
   }
 }
 
@@ -354,11 +398,11 @@
   padding: 1% 1%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div15 {
-    max-width: 100%;
-    margin-top: 40px;
-    padding: 0 20px;
+    margin-top: 4px;
+        padding: 0 0px;
+        width: 34rem;
   }
 }
 
@@ -371,9 +415,10 @@
   margin-left: 11px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .img8 {
     margin-left: 10px;
+    width: 6%;
   }
 }
 
@@ -384,9 +429,10 @@
   font: 500 28px Poppins, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div16 {
-    margin-left: 10px;
+    margin: 2%;
+    font-size: 20px;
   }
 }
 
@@ -396,9 +442,12 @@
   margin: 19px 0 0 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .div17 {
-    margin-left: 10px;
+    margin-left: -65px;
+    font-size: 10px;
+    width: 300px;
+    margin-top: -1%;
   }
 }
 
@@ -410,7 +459,9 @@
 
 @media (max-width: 991px) {
   .div18 {
-    margin-left: 10px;
+    margin-left: -65px;
+    font-size: 10px;
+    width: 300px;
   }
 }
 
@@ -422,7 +473,9 @@
 
 @media (max-width: 991px) {
   .div19 {
-    margin-left: 10px;
+    margin-left: -65px;
+    font-size: 10px;
+    width: 300px;
   }
 }
 
@@ -432,9 +485,12 @@
   height: 50%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 459px) {
   .img10 {
-    margin-top: 40px;
+    margin-top: -5px;
+    height: 92px;
+    margin-left: -55px;
+
   }
 }
 .featuresContainer {
@@ -455,7 +511,7 @@
   border-radius: 20px 20px 1% 1%;
   text-align: center;
   padding: 15px;
-  width: 400px; /* Set a specific width for each card */
+  width: 100%; /* Set a specific width for each card */
   margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
