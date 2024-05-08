@@ -48,7 +48,22 @@ line-height: normal;
   border-radius: 20px 20px 20px 0;
   width: 90%;
 }
-
+@media screen and (max-width: 399px)
+{
+  .container1{
+    width: 104%;
+    margin-left: -2%;
+  }
+  
+}
+@media screen and (max-width: 459px)
+{
+  .container1{
+    width: 104%;
+    margin-left: -2%;
+  }
+  
+}
 .container2 {
   background-color: #f9f9fe;
   padding: 20px;
@@ -57,6 +72,22 @@ line-height: normal;
   width: 90%;
 }
 
+@media screen and (max-width: 399px)
+{
+  .container2{
+    width: 104%;
+    margin-left: -2%;
+  }
+  
+}
+@media screen and (max-width: 459px)
+{
+  .container2{
+    width: 104%;
+    margin-left: -2%;
+  }
+  
+}
 @media screen and (max-width: 425px) {
   .tabs li {
     font-size: 1.25rem;

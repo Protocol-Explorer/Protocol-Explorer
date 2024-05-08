@@ -11,6 +11,12 @@
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (max-width: 459px) {
+  .heading {
+    font-size: 0.75rem;
+  }
+  
+}
 .card {
   margin-top: 5%;
   margin-right:auto;
@@ -42,6 +48,12 @@
   margin-top: auto;
   margin-left: auto;
 }
+@media screen and (max-width: 459px) {
+  .socials {
+    width: 17%;
+  }
+  
+}
 
 .link {
   background-color: #8575a9;
@@ -54,6 +66,17 @@
   padding: 0.35rem;
   margin-right: 10px;
   margin-bottom: 1px;
+}
+
+@media screen and (max-width: 459px){
+  .link{
+    margin-bottom: -3px;
+    margin-top: 20%;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    padding: 6%;
+  }
 }
 .title {
   margin-right: auto;
@@ -87,11 +110,24 @@
   white-space: nowrap;
   margin-top: 5px;
 }
+@media screen and (max-width: 459px) {
+  .link2 {
+    font-size: 10px;
+    padding: 10px;
+    height: 31px;
+  }
+  
+}
 .byline {
   display:flex;
   margin-bottom: -50px;
 }
-
+@media screen and (max-width: 459px) {
+  .byline {
+    font-size: 0.75rem
+  }
+  
+}
 @media screen and (max-width: 425px) {
   .card {
     display: flex;

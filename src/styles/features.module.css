@@ -1,9 +1,16 @@
 .purpleContainer{
-  width: 80.5rem;
+  width: 75.5rem;
   height: 30.625rem;
   position: relative; /* or absolute */
   margin-left: 25px;
-  
+}
+@media (max-width: 459px) {
+  .purpleContainer{
+    width: 89.5rem;
+    height: 30.625rem;
+    position: relative;
+    margin-left: 32px;
+  }
 }
 .div {
   padding: 5% 3%;
@@ -290,7 +297,7 @@ width: 2px;
 .div12 {
   position: relative;
   font-family: Roboto, sans-serif;
-  margin: 19px 0 0 12px;
+  margin: 6px 0 0 12px;
 }
 
 @media (max-width: 459px) {
@@ -305,7 +312,7 @@ width: 2px;
 .div13 {
   position: relative;
   font-family: Roboto, sans-serif;
-  margin: 11px 0 0 12px;
+  margin: 4px 0 0 12px;
 }
 
 @media (max-width: 459px) {
@@ -320,7 +327,7 @@ width: 2px;
 .div14 {
   position: relative;
   font-family: Roboto, sans-serif;
-  margin: 15px 0 0 12px;
+  margin: 0px 0 0 12px;
 }
 
 @media (max-width: 459px) {

@@ -34,6 +34,7 @@ function Footer() {
               ))}
             </div>
           </div>
+          <div className={styles.logoSection}>
           <nav className={styles.navigation}>
             <div className={styles.navItemProtocol}>Protocol</div>
             <div className={styles.navItem}>About</div>
@@ -44,6 +45,7 @@ function Footer() {
             <div className={styles.navItem}>Train</div>
             <div className={styles.navItem}>Explore</div>
           </nav>
+        </div>
           <div className={styles.joinSection}>
             <h2 className={styles.sectionTitle}>Join Us</h2>
             <div className={styles.joinTelegram}>

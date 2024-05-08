@@ -16,6 +16,19 @@
   border: 3px solid #a598c5;
   overflow: hidden;
 }
+@media screen and (max-width: 499px)
+{
+ .iconWrapper{
+  width: 45px;
+  height: 45px;
+  margin-top: 4px;
+ } 
+}
+@media screen and (max-width: 399px) {
+  .socialsWrap {
+    margin-left: 20%;
+  }
+}
 
 .iconWrapper2 {
   position: relative;
@@ -37,6 +50,14 @@
   border-radius: 8px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 499px)
+{
+  .heroImageWrapper{
+    width: 110%;
+    height: 193px;
+    margin-left: -4%;
+  }
+}
 .labelText {
   color: #ffff;
 }
@@ -49,6 +70,12 @@
 .titleWapper {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 499px)
+{
+.titleWapper {
+  margin-left: -4%;
+}  
 }
 
 .title {
@@ -87,14 +114,30 @@
   width: 100%;
   height: 80%;
   margin-top: 5%;
- 
-
+}
+@media screen and (max-width: 499px) {
+ .icon{
+  width: 86%;
+  height: 81%;
+  margin-top: 9%;
+ }
+  
 }
 .pageContent {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 499px) {
+  
+  .pageContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+  }
+  
 
 .sideMenu {
   background-color: #8575a9;
@@ -106,6 +149,21 @@
   margin-right: 10%;
   max-height: 300px;
   margin-top: 3.5%;
+}
+@media screen and (max-width: 499px) {
+  .sideMenu {
+    width: 107%;
+    margin-left: -3%;
+  }
+  
+}
+@media screen and (max-width: 499px) {
+  .linkWrapper {
+   display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
 }
 
 .link {
@@ -160,7 +218,11 @@
   width: 110px;
   margin-top: 20px;
 }
-
+@media screen and (max-width: 499px){
+  .socials{
+    margin-left: -47%;
+  }
+}
 .backArrow {
   width: 50px;
   color: black;
@@ -168,8 +230,8 @@
 
 @media screen and (max-width: 425px) {
   .heroImageWrapper {
-    width: 100%;
-    height: 100px;
+    width: 110%;
+        height: 155px;
   }
   .pageContent {
     flex-direction: column-reverse;

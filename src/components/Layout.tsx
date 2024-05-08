@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import Footer from "./Footer";
 
 type article = {
   title: string;
@@ -56,7 +57,7 @@ const Layout: React.FC<ProtocolPageProps> = ({ protocol, children }) => {
       <main className={styles.container}>
         <div style={{ display: "flex" }}>
           <Link href="/explore">
-          <img src="./backArrow.svg" className={styles.icon} />
+            <img src="./backArrow.svg" className={styles.icon} />
           </Link>
           <div className={styles.titleWapper}>
             <div className={styles.iconWrapper}>
@@ -99,39 +100,44 @@ const Layout: React.FC<ProtocolPageProps> = ({ protocol, children }) => {
             <h3 className={styles.labelText}>
               Start building with {name} Today
             </h3>
-            <div className={styles.links}>
-              <a href={website} target="_blank" className={styles.link}>
-                Website
-              </a>
-              <a href={docs} target="_blank" className={styles.link}>
-                Docs
-              </a>
-            </div>
-            <div className={styles.socials}>
-              <a
-                href={twitterLink}
-                target="_blank"
-                className={styles.socialIconWrapper}
-              >
-                <FontAwesomeIcon
-                  className={styles.socialIcon}
-                  icon={faXTwitter}
-                />
-              </a>
-              <a
-                href={discordLink}
-                target="_blank"
-                className={styles.socialIconWrapper}
-              >
-                <FontAwesomeIcon
-                  className={styles.socialIcon}
-                  icon={faDiscord}
-                />
-              </a>
+            <div className={styles.linkWrapper}>
+              <div className={styles.links}>
+                <a href={website} target="_blank" className={styles.link}>
+                  Website
+                </a>
+                <a href={docs} target="_blank" className={styles.link}>
+                  Docs
+                </a>
+              </div>
+              <div className={styles.socialsWrap}>
+                <div className={styles.socials}>
+                  <a
+                    href={twitterLink}
+                    target="_blank"
+                    className={styles.socialIconWrapper}
+                  >
+                    <FontAwesomeIcon
+                      className={styles.socialIcon}
+                      icon={faXTwitter}
+                    />
+                  </a>
+                  <a
+                    href={discordLink}
+                    target="_blank"
+                    className={styles.socialIconWrapper}
+                  >
+                    <FontAwesomeIcon
+                      className={styles.socialIcon}
+                      icon={faDiscord}
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
