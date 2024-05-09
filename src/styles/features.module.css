@@ -2,7 +2,7 @@
   width: 75.5rem;
   height: 30.625rem;
   position: relative; /* or absolute */
-  margin-left: 25px;
+  margin: 0 auto;
 }
 @media (max-width: 459px) {
   .purpleContainer{

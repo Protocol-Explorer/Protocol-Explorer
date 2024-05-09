@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  
 }
 
 .burgerLines {
@@ -18,7 +18,7 @@
 .navLinks {
   display: flex;
   align-items: center;
-  /* Increase spacing between links if needed */
+  margin-left: 2.5%; /* Increase spacing between links if needed */
   gap: 20px;
 }
 
@@ -26,12 +26,10 @@
   margin: 0;
   padding: 10px; /* Add padding to increase tap/click area */
   text-decoration: none;
-  color: black; /* Choose a color that contrasts well with the navbar background */
-  font-size: 1.2rem; /* Increase font size */
+  color: #080F36;
+  font-size: 1.45rem;/* Increase font size */
   font-weight: 500; /* Increase font weight to make it bolder */
-  /* You may also add text-transform for uppercase, if it fits your design */
-  text-transform: uppercase;
-  /* Add a transition for a hover effect */
+
   transition: color 0.3s ease;
 }
 
@@ -52,7 +50,7 @@
   display: inline-block; /* Aligns the image correctly */
   width: 50px; /* Set the size of the circle */
   height: 50px;
-  border: 3px solid #c9c2b7; /* Example: A solid border with a light color */
+  border: 3px solid #E4E4F9; /* Example: A solid border with a light color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle shadow for depth */
 }
 
@@ -216,13 +214,6 @@
   }
   .overlapGroup {
     width: 1rem;
-  }
-}
-@media screen and (max-width: 499px) {
-  .navbarContainer {
-    flex-direction: row;
-    width: 10px;
-    margin-left: -44%;
   }
 }
 @media screen and (max-width: 799px) {
@@ -410,5 +401,14 @@
   .navbarContainer {
     display: flex;
     justify-content: space-between;
+    margin-left: -4%;
   }
+}
+@media screen and (max-width: 399px) {
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 344%;
+  }
+  
 }

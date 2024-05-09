@@ -18,7 +18,12 @@
   width: auto;
   min-height: 100vh; /* Set minimum height to 100% of viewport height */
 }
-
+@media screen and (max-width: 499px) {
+  .wrapper {
+    min-height: 100vh;
+  }
+  
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -212,23 +217,3 @@
   }
 }
 
-:root .wrapper{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: auto;
-    max-height: 100% ;/* Set minimum height to 100% of viewport height */
-    margin-top: 35%;
-  }
-  :not(:root) .wrapper{
-    display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: auto;
-  min-height: 100vh;
-  }

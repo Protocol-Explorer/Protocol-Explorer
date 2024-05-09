@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 import TelegramCall from "@/components/TelegramCall";
 import Image from "next/image";
 import Features from "@/components/Features";
-import Footer from "@/components/Footer";
 import Link from "next/link";
+import Foter from "@/components/Foter";
 export default function Home() {
   return (
     
@@ -96,7 +96,7 @@ export default function Home() {
         </div>
       </div>
       <Features />
-      <Footer />
+     <Foter />
     </>
   ); 
 }
