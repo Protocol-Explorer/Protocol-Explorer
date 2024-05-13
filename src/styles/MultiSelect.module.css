@@ -34,6 +34,11 @@
   appearance: none; /* Removes default styling for modern browsers */
   padding: 10px;
 }
+.label:hover{
+  
+    transform: translateY(-5px); /* Card pops up a bit on hover */
+
+}
 
 .selected {
   background-color: #c9c2b7; /* A different color to indicate selection */

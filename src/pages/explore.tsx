@@ -10,6 +10,7 @@ import { useState } from "react";
 import MultiSelect from "@/components/MultiSelect";
 
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 interface Protocol {
   name: string;
@@ -56,6 +57,7 @@ export default function Explore({ protocols }: ProtocolPageProps) {
           <ProtocolCard key={i} {...protocol} />
         ))}
       </main>
+      <Footer />
     </>
   );
 }

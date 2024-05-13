@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import Footer from "./Footer";
 
 type article = {
   title: string;
@@ -54,25 +55,28 @@ const Layout: React.FC<ProtocolPageProps> = ({ protocol, children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.container}>
-      <Link href="/explore">
-            <FontAwesomeIcon className={styles.backArrow} icon={faArrowLeft} />
+        <div style={{ display: "flex" }}>
+          <Link href="/explore">
+            <img src="./backArrow.svg" className={styles.icon} />
           </Link>
-        <div className={styles.titleWapper}>
-          <div className={styles.iconWrapper}>
-            <Image
-              src={logo}
-              alt="Protocol Explorer platform"
-              layout="fill"
-              objectFit="contain"
-            />
+          <div className={styles.titleWapper}>
+            <div className={styles.iconWrapper}>
+              <Image
+                src={logo}
+                alt="Protocol Explorer platform"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+            <h1 className={styles.title}>{name}</h1>
           </div>
-          <h1 className={styles.title}>{name}</h1>
+          {labels.map((label, i) => (
+            <p className={styles.label} key={i}>
+              {label}
+            </p>
+          ))}
         </div>
-        {labels.map((label, i) => (
-          <p className={styles.label} key={i}>
-            {label}
-          </p>
-        ))}
+
         <div className={styles.heroImageWrapper}>
           <Image
             src={heroImage}
@@ -85,7 +89,7 @@ const Layout: React.FC<ProtocolPageProps> = ({ protocol, children }) => {
         <div className={styles.pageContent}>
           <Tabs protocol={protocol}>{children}</Tabs>
           <div className={styles.sideMenu}>
-            <div className={styles.iconWrapper}>
+            <div className={styles.iconWrapper2}>
               <Image
                 src={logo}
                 alt="Protocol Explorering platform"
@@ -93,40 +97,47 @@ const Layout: React.FC<ProtocolPageProps> = ({ protocol, children }) => {
                 objectFit="contain"
               />
             </div>
-            <h3>Start building with {name} Today</h3>
-            <div className={styles.links}>
-              <a href={website} target="_blank" className={styles.link}>
-                Website
-              </a>
-              <a href={docs} target="_blank" className={styles.link}>
-                Docs
-              </a>
-            </div>
-            <div className={styles.socials}>
-              <a
-                href={twitterLink}
-                target="_blank"
-                className={styles.socialIconWrapper}
-              >
-                <FontAwesomeIcon
-                  className={styles.socialIcon}
-                  icon={faXTwitter}
-                />
-              </a>
-              <a
-                href={discordLink}
-                target="_blank"
-                className={styles.socialIconWrapper}
-              >
-                <FontAwesomeIcon
-                  className={styles.socialIcon}
-                  icon={faDiscord}
-                />
-              </a>
+            <h3 className={styles.labelText}>
+              Start building with {name} Today
+            </h3>
+            <div className={styles.linkWrapper}>
+              <div className={styles.links}>
+                <a href={website} target="_blank" className={styles.link}>
+                  Website
+                </a>
+                <a href={docs} target="_blank" className={styles.link}>
+                  Docs
+                </a>
+              </div>
+              <div className={styles.socialsWrap}>
+                <div className={styles.socials}>
+                  <a
+                    href={twitterLink}
+                    target="_blank"
+                    className={styles.socialIconWrapper}
+                  >
+                    <FontAwesomeIcon
+                      className={styles.socialIcon}
+                      icon={faXTwitter}
+                    />
+                  </a>
+                  <a
+                    href={discordLink}
+                    target="_blank"
+                    className={styles.socialIconWrapper}
+                  >
+                    <FontAwesomeIcon
+                      className={styles.socialIcon}
+                      icon={faDiscord}
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

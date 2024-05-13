@@ -6,7 +6,18 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 auto;
 } 
-
+@media screen and (max-width: 459px) {
+  .main {
+    min-height: 100vh;
+    max-width: 1200px;
+    display: grid;
+    grid-gap: -6rem;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    margin: -11px 6px;
+  }
+}
+  
 .centeredContainer {
   display: flex;
   justify-content: center;
@@ -31,5 +42,12 @@
   margin-top: 1%;
   margin-left: 50%;
   margin-right: 50%;
+}
+@media screen and (max-width: 459px) {
+  .circleSvg {
+    margin-top: -10%;
+    margin-left: 43%;
+    margin-right: 50%;
+  }
   
 }

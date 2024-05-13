@@ -5,7 +5,7 @@
   padding: 0;
   display: flex;
   margin-bottom: 1rem;
-  position: relative; 
+  position: relative;
 }
 
 .tabs li {
@@ -19,18 +19,75 @@
 .underline {
   position: absolute;
   height: 2px;
-  background-color: #A2A2A5;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  transition: left 0.3s ease, width 0.3s ease; 
-  z-index: -1; 
 }
 
 .tabs li.current {
-  color: #A2A2A5;
+  color: #a2a2a5;
 }
 
+.label{
+  color: #8575A9;
+font-family: Poppins;
+font-size: 2.125rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.content {
+  color: #8575A9;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container1 {
+  background-color: #f9f9fe;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px 20px 20px 0;
+  width: 90%;
+}
+@media screen and (max-width: 399px)
+{
+  .container1{
+    width: 104%;
+    margin-left: -2%;
+  }
+  
+}
+@media screen and (max-width: 459px)
+{
+  .container1{
+    width: 104%;
+    margin-left: -2%;
+  }
+  
+}
+.container2 {
+  background-color: #f9f9fe;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px 20px 20px 0;
+  width: 90%;
+}
+
+@media screen and (max-width: 399px)
+{
+  .container2{
+    width: 104%;
+    margin-left: -2%;
+  }
+  
+}
+@media screen and (max-width: 459px)
+{
+  .container2{
+    width: 104%;
+    margin-left: -2%;
+  }
+  
+}
 @media screen and (max-width: 425px) {
   .tabs li {
     font-size: 1.25rem;

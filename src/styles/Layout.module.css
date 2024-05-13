@@ -7,12 +7,39 @@
 
 .iconWrapper {
   position: relative;
-  width: 75px;
-  height: 75px;
-  background-color: #FFF;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
   border-radius: 50%;
-  margin-bottom: 20px;
-  border: .5px solid black;
+  margin-top: 1px;
+  margin-left: 15px;
+  border: 3px solid #a598c5;
+  overflow: hidden;
+}
+@media screen and (max-width: 499px)
+{
+ .iconWrapper{
+  width: 45px;
+  height: 45px;
+  margin-top: 4px;
+ } 
+}
+@media screen and (max-width: 399px) {
+  .socialsWrap {
+    margin-left: 20%;
+  }
+}
+
+.iconWrapper2 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 1px;
+  margin-left: 1px;
+  border: 3px solid #a598c5;
+  overflow: hidden;
 }
 
 .heroImageWrapper {
@@ -23,60 +50,133 @@
   border-radius: 8px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 499px)
+{
+  .heroImageWrapper{
+    width: 110%;
+    height: 193px;
+    margin-left: -4%;
+  }
+}
+.labelText {
+  color: #ffff;
+}
 
 .heroImage {
   object-fit: cover;
+  border-radius: 40px 40px 40px 0px;
 }
 
 .titleWapper {
   display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 499px)
+{
+.titleWapper {
+  margin-left: -4%;
+}  
 }
 
 .title {
- margin-top: 20px;
- margin-left: 10px;
+  margin-top: 7px;
+  margin-left: 15px;
+  color: #8575a9;
+  font-family: Poppins;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .label {
   width: max-content;
-  background-color: #E5E4F9;
-  padding: 5px;
-  border-radius: 10px;
+  background-color: transparent;
+  padding: 10px;
+  height: 35px;
+  border-radius: 20px 20px 20px 0px;
   text-transform: capitalize;
-  margin-right: 5px;
-  margin-bottom: 10px;
+  margin-top: auto;
+  margin-top: 7px;
+  margin-left: 15px;
+  border: 1.5px solid #d9d0f0; /* Added border style */
+  outline: none; /* Removes the default outline */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  color: #8575a9; /* Changed the text color */
+  font-family: Roboto;
+  font-size: 0.8375rem; /* Inherits the font style from the parent */
+  line-height: normal; /* Resets the default line height */
+  -webkit-appearance: none; /* Removes default styling for WebKit browsers */
+  -moz-appearance: none; /* Removes default styling for Mozilla browsers */
+  appearance: none;
 }
-
+.icon{
+  width: 100%;
+  height: 80%;
+  margin-top: 5%;
+}
+@media screen and (max-width: 499px) {
+ .icon{
+  width: 86%;
+  height: 81%;
+  margin-top: 9%;
+ }
+  
+}
 .pageContent {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 499px) {
+  
+  .pageContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+  }
+  
 
 .sideMenu {
-  background-color: #F8F8F8;
-  border-radius: 50px;
+  background-color: #8575a9;
+  border-radius: 20px 20px 20px 0px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid black;
   margin-right: 10%;
   max-height: 300px;
+  margin-top: 3.5%;
+}
+@media screen and (max-width: 499px) {
+  .sideMenu {
+    width: 107%;
+    margin-left: -3%;
+  }
+  
+}
+@media screen and (max-width: 499px) {
+  .linkWrapper {
+   display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
 }
 
 .link {
-  font-family: 'Questrial', sans-serif;
-  background-color: #E5E4F9;
+  font-family: "Questrial", sans-serif;
+  background-color: #ffffff;
+  border-radius: 20px 20px 20px 0px;
   font-size: 16px;
-  letter-spacing: 2px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
+  font-family: Roboto;
+  color: #8575a9;
   cursor: pointer;
   border: 3px solid;
-  padding: .5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  padding: 0.5em;
   position: relative;
   user-select: none;
   -webkit-user-select: none;
@@ -99,18 +199,17 @@
 .socialIcon {
   width: 25px;
   height: 25px;
-  color: black;
+  color: #8575a9;
 }
 
 .socialIconWrapper {
-  border: 1px solid black;
-  border-radius: 50%;
+  border-radius: 100%;
   width: 50px;
   height: 50px;
   text-align: center;
   vertical-align: middle;
   line-height: 60px;
-  background-color: #E5E4F9;
+  background-color: #ffffff;
 }
 
 .socials {
@@ -119,7 +218,11 @@
   width: 110px;
   margin-top: 20px;
 }
-
+@media screen and (max-width: 499px){
+  .socials{
+    margin-left: -47%;
+  }
+}
 .backArrow {
   width: 50px;
   color: black;
@@ -127,8 +230,8 @@
 
 @media screen and (max-width: 425px) {
   .heroImageWrapper {
-    width: 100%;
-    height: 100px;
+    width: 110%;
+        height: 155px;
   }
   .pageContent {
     flex-direction: column-reverse;

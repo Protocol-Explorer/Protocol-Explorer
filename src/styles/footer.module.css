@@ -18,7 +18,12 @@
   width: auto;
   min-height: 100vh; /* Set minimum height to 100% of viewport height */
 }
-
+@media screen and (max-width: 499px) {
+  .wrapper {
+    min-height: 100vh;
+  }
+  
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -49,7 +54,37 @@
   display: flex;
   gap: 20px;
 }
+.logoSection {
+  display: flex;
+  flex-direction: row;
+  gap: 165px;
+}
+@media screen and (max-width: 459px) {
+  .logoSection {
+    gap: 20px;
+  }
+  .footerLogo {
+    order: 0; /* Move the logo to the top */
+    margin-bottom: 10px; /* Add space between logo and text */
+    margin-left: -100%;
+  }
 
+  .copyright {
+    order: 2; /* Move the copyright text to the middle */
+    margin-left: 0%;
+  }
+
+  .footerLinks {
+    order: 3; /* Keep the links at the bottom */
+    margin-right: 20%;
+    width: 100%;
+
+  }
+  .footerLink{
+    word-wrap: break-word; ;
+  }
+  
+}
 .navigation {
   display: flex;
   flex-direction: column;
@@ -157,7 +192,6 @@
 .circle {
   border-radius: 50%; /* Makes the image circular */
   overflow: hidden; /* Ensures the image stays within the circular boundary */
-
   width: 50px; /* Set the size of the circle */
   height: 50px;
   border: 3px solid #cdcded; /* Example: A solid border with a light color */
@@ -176,5 +210,10 @@
   }
 }
 
-.separator {
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+

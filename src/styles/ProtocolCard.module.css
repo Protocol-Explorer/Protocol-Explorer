@@ -9,7 +9,13 @@
   width: 20.25rem;
   height: 24.875rem;
 }
-
+@media screen and (max-width: 459px) {
+  .card {
+    width: 12.25rem;
+    height: 13.875rem;
+  }
+  
+}
 .iconWrapper {
   display: flex;
   justify-content: center;
@@ -25,6 +31,13 @@
   border-radius: 100%; /* This ensures no overflow if the image is larger than the container */
 }
 
+@media screen and (max-width: 459px) {
+  .iconWrapper {
+    width: 54px;
+    height: 54px;
+  }
+  
+}
 .cardTitle {
   margin-bottom: 20px;
 }
@@ -40,6 +53,11 @@ font-weight: 300;
 line-height: normal;
 }
 
+@media screen and (max-width: 459px) {
+  .description {
+    display: none;
+  }
+}
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -111,4 +129,13 @@ line-height: normal;
   vertical-align: middle;
   line-height: 60px;
   background-color: #8575A9;
+}
+@media screen and (max-width: 459px) {
+  .socialIconWrapper {
+    margin: 18px;
+    margin-left: -2px;
+    margin-top: -23px;
+    width: 40px;
+    height: 40px;
+  }
 }

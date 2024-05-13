@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "@/styles/footer.module.css";
+import styles from "@/styles/footer1.module.css";
 import Image from "next/image";
 
 const links = [
@@ -8,7 +8,7 @@ const links = [
   { url: "https://twitter.com/razacodes", imgPath: "/raza.png" },
 ];
 
-function Footer() {
+function Foter() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -104,4 +104,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Foter;
